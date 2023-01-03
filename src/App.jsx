@@ -7,7 +7,7 @@ function App() {
       <Header />
 
       <main>
-        <Hero />
+        {/* <Hero /> */}
       </main>
     </>
   );

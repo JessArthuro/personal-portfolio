@@ -2,8 +2,12 @@
 
 :root {
   --titles-color: #ccd6f6;
-  --green: #64ffda;
+  /* --green: #64ffda; */
+  --purple: #814bf6;
+  --purple-hover: #6535cf;
+  --blue: #00bcff;
   --gray: #8892b0;
+  --white: #ffffff;
 }
 
 * {
@@ -15,6 +19,20 @@
 }
 
 body {
-  background-color: #0a192f;
+  background-color: #110E27;
   color: var(--gray);
+  /* color: #008bf8;
+  color: #1dd3b0; */
+  /* color: var(--green); */
+}
+
+.container {
+  max-width: 1200px;
+  width: 92%;
+  margin: 0 auto;
+  /* border: 1px solid white; */
+}
+
+a {
+  text-decoration: none;
 }
