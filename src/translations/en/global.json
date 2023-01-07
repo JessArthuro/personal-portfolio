@@ -6,5 +6,11 @@
     "contact": "Contact",
     "english": "English",
     "spanish": "Spanish"
+  },
+  "hero": {
+    "title": "Hi, my name is",
+    "subtitle": "I build incredible websites and apps.",
+    "description": "I'm a front-end web developer and Computer Systems Engineer who enjoys creating fantastic concepts and digital experiences for the web.",
+    "button": "Contact me"
   }
 }

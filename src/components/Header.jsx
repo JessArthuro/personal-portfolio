@@ -6,7 +6,7 @@ import MxFlag from "../assets/mx-flag.svg";
 import UsFlag from "../assets/us-flag.svg";
 import "../styles/header.scss";
 
-function Header() {
+export const Header = () => {
   const [t, i18n] = useTranslation("global");
 
   const [isOpen, setIsOpen] = useState(false);
@@ -25,69 +25,60 @@ function Header() {
   }, []);
 
   return (
-    <header className="header container">
-      <a href="#" className="logo">
-        <span>{`[`}</span> JS Arturo <span>{`]`}</span>
-      </a>
+    <header className="header_section">
+      <nav className="nav_content container">
+        <a href="#" className="logo">
+          <span>{`[`}</span> JS Arturo <span>{`]`}</span>
+        </a>
 
-      <nav className="nav_menu">
-        <ol className="nav_list">
-          <li className="nav_item">
-            <a className="nav_link" href="#">
-              {t("header.about")}
-            </a>
-          </li>
-          <li className="nav_item">
-            <a className="nav_link" href="#">
-              {t("header.experience")}
-            </a>
-          </li>
-          <li className="nav_item">
-            <a className="nav_link" href="#">
-              {t("header.projects")}
-            </a>
-          </li>
-          <li className="nav_item">
-            <a className="nav_link" href="#">
-              {t("header.contact")}
-            </a>
-          </li>
-        </ol>
+        <div className="nav">
+          <ol className="nav_list">
+            <li className="nav_item">
+              <a className="nav_link" href="#">
+                {t("header.about")}
+              </a>
+            </li>
+            <li className="nav_item">
+              <a className="nav_link" href="#">
+                {t("header.experience")}
+              </a>
+            </li>
+            <li className="nav_item">
+              <a className="nav_link" href="#">
+                {t("header.projects")}
+              </a>
+            </li>
+            <li className="nav_item">
+              <a className="nav_link" href="#">
+                {t("header.contact")}
+              </a>
+            </li>
+          </ol>
+        </div>
 
-        {/* <a
-          className="cv_link"
-          href="/public/CV_Jesus_Arturo_CA.pdf"
-          download
-          target="_blank"
-        >
-          {t("header.download")}
-        </a> */}
+        <div className="languages">
+          <span className="languages_icon">
+            <HiLanguage />
+          </span>
+          <button
+            ref={btnRef}
+            className="languages_btn"
+            onClick={() => setIsOpen((prev) => !prev)}
+          >
+            {i18n.language}
+            <img className="arrow_icon" src={ArrowDown} alt="" />
+          </button>
+
+          <ul className={`languages_list ${isOpen ? "open" : ""}`}>
+            <li onClick={() => i18n.changeLanguage("en")}>
+              <img src={UsFlag} alt="" /> {t("header.english")}
+            </li>
+            <li onClick={() => i18n.changeLanguage("es")}>
+              <img src={MxFlag} alt="" /> {t("header.spanish")}
+            </li>
+          </ul>
+        </div>
       </nav>
-
-      <div className="languages">
-        <span className="languages_icon">
-          <HiLanguage />
-        </span>
-        <button
-          ref={btnRef}
-          className="languages_btn"
-          onClick={() => setIsOpen((prev) => !prev)}
-        >
-          {i18n.language}
-          <img className="arrow_icon" src={ArrowDown} alt="" />
-        </button>
-
-        <ul className={`languages_list ${isOpen ? "open" : ""}`}>
-          <li onClick={() => i18n.changeLanguage("en")}>
-            <img src={UsFlag} alt="" /> {t("header.english")}
-          </li>
-          <li onClick={() => i18n.changeLanguage("es")}>
-            <img src={MxFlag} alt="" /> {t("header.spanish")}
-          </li>
-        </ul>
-      </div>
     </header>
   );
-}
-
-export default Header;
+};

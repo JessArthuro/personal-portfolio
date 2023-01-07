@@ -1,18 +1,119 @@
-.hero_title {
-  font-size: 5rem;
-  letter-spacing: -0.25rem;
-  font-weight: 500;
-  // background-color: #37C5FF;
-  // color: red;
-  background: linear-gradient(to right, #37C5FF, #986EF6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.hero {
+  &_section {
+    margin-top: 9rem;
+    // border: 1px solid red;
+  }
+
+  &_data {
+    padding-left: 5.5rem;
+    // border: 1px solid yellow;
+    position: relative;
+  }
+
+  &_title {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--green);
+    margin-bottom: 1.5rem;
+  }
+
+  &_name {
+    font-size: 5rem;
+    color: var(--titles-color);
+    line-height: 5rem;
+    margin-bottom: 0.5rem;
+    font-family: var(--font-inter);
+    // border: 1px solid;
+  }
+
+  &_subtitle {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-family: var(--font-inter);
+    // border: 1px solid;
+  }
+
+  &_description {
+    max-width: 30rem;
+    font-size: 1.05rem;
+    font-family: var(--font-inter);
+  }
+
+  &_btn {
+    background: none;
+    border: 1px solid var(--green);
+    color: var(--green);
+    font-size: 0.9rem;
+    margin-top: 3.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 0.25rem;
+    display: inline-block;
+  }
 }
 
-// #814bf6 color morado 
-// #6535cf color morado cuando tiene hover
-// box-shadow: 0px 5px 15px rgba(128, 0, 255, 0.3);
-// #938ca7 color gris
-// #ffffff color blanco textos titulares
-// #110e27 color morado mas oscuro
-// #090909 color negro para footer
+.left_side,
+.right_side {
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0.85px;
+    height: 85px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--gray);
+  }
+}
+
+.left_side {
+  left: 3.25rem;
+
+  .social_links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.4rem;
+    margin-bottom: 7rem;
+
+    .social_link {
+      font-size: 1.2rem;
+      color: var(--gray);
+      transition: color 0.4s ease;
+
+      &:hover {
+        color: var(--green);
+      }
+    }
+  }
+}
+
+.right_side {
+  right: 3.25rem;
+
+  .email_link {
+    writing-mode: vertical-lr;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    color: var(--gray);
+    margin-bottom: 7rem;
+    transition: color 0.4s ease;
+
+    &:hover {
+      color: var(--green);
+    }
+  }
+}
+
+// .hero_title {
+//   font-size: 5rem;
+//   letter-spacing: -0.25rem;
+//   font-weight: 500;
+//   background-color: #37C5FF;
+//   color: red;
+//   background: linear-gradient(to right, #37C5FF, #986EF6);
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+// }

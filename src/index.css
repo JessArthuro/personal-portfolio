@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
 
 :root {
   --bg-body: #23272d;
@@ -6,6 +6,9 @@
   --titles-color: #ccd6f6;
   --gray: #8892b0;
   --white: #ffffff;
+
+  --font-inter: 'Inter', sans-serif;
+  --font-mono: "Roboto Mono", monospace;
 
   /* Option #2 */
   /* --bg-body: #110E27;
@@ -19,7 +22,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Roboto Mono", monospace;
+  font-family: var(--font-mono);
 }
 
 body {
