@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
 
 :root {
+  --bg-body: #23272d;
+  --green: #33ffa9;
   --titles-color: #ccd6f6;
-  /* --green: #64ffda; */
-  --purple: #814bf6;
-  --purple-hover: #6535cf;
-  --blue: #00bcff;
   --gray: #8892b0;
   --white: #ffffff;
+
+  /* Option #2 */
+  /* --bg-body: #110E27;
+  --purple: #814bf6;
+  --purple-hover: #6535cf;
+  --blue: #00bcff; */
 }
 
 * {
@@ -19,18 +23,15 @@
 }
 
 body {
-  background-color: #110E27;
+  background-color: var(--bg-body);
   color: var(--gray);
-  /* color: #008bf8;
-  color: #1dd3b0; */
-  /* color: var(--green); */
 }
 
 .container {
   max-width: 1200px;
   width: 92%;
   margin: 0 auto;
-  /* border: 1px solid white; */
+  /* border: 1px solid red; */
 }
 
 a {
