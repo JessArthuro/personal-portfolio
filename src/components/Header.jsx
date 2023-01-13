@@ -29,10 +29,31 @@ export const Header = () => {
     return () => document.body.removeEventListener("click", closeDropdown);
   }, []);
 
+  const [headerScroll, setHeaderScroll] = useState(false);
+
+  const handleScrolling = () => {
+    let scrollHeightLimit = 10;
+
+    const winScroll =
+      document.body.scrollTop || document.documentElement.scrollTop;
+    if (winScroll > scrollHeightLimit) {
+      setHeaderScroll(true);
+    } else {
+      setHeaderScroll(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScrolling);
+    return () => window.removeEventListener("scroll", handleScrolling);
+  }, []);
+
   return (
-    <header className="header_section">
+    <header
+      className={`header_section ${headerScroll ? "header_scrolling" : ""}`}
+    >
       <nav className="nav_content container">
-        <a href="/">
+        <a href="/" className="logo_link">
           <img src={logo} alt="" className="logo_img" />
         </a>
 

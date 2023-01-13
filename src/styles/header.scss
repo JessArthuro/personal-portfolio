@@ -1,12 +1,33 @@
 .header_section {
-  background: var(--bg-body);
-  padding: 3rem 0 1rem;
   position: fixed;
-  width: 100%;
   top: 0;
   left: 0;
-  z-index: 20;
-  // border: 1px solid;
+  width: 100%;
+  background-color: var(--bg-body-light);
+  border: 1rem solid var(--bg-body);
+  border-bottom: 0;
+  z-index: 30;
+
+  &.header_scrolling {
+    background-color: var(--bg-body);
+    border-bottom: 1px solid var(--green);
+
+    .logo_link {
+      margin-top: -0.75rem;
+    }
+
+    .logo_img {
+      height: 2.5rem;
+    }
+
+    .nav {
+      padding: 0.75rem 2.5rem 1.75rem;
+    }
+
+    .languages {
+      margin-top: -0.75rem;
+    }
+  }
 }
 
 .nav_content {
@@ -15,8 +36,22 @@
   align-items: center;
 }
 
+.logo_link {
+  margin-top: 0.5rem;
+  transition: margin 0.4s ease-out;
+}
+
 .logo_img {
   height: 3rem;
+  transition: height 0.4s ease-out;
+}
+
+.nav {
+  background: var(--bg-body);
+  padding: 1.75rem 3.5rem;
+  position: relative;
+  transition: padding 0.4s ease-out;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 15px) 20%, calc(100% - 15px) 80%, calc(100% - 30px) 100%, calc(0% + 30px) 100%, calc(0% + 15px) 80%, calc(0% + 15px) 20%);
 }
 
 .nav_list {
@@ -90,6 +125,7 @@
   display: flex;
   align-items: center;
   column-gap: 0.75rem;
+  transition: margin 0.4s ease-out;
 
   &_icon {
     color: var(--green);
@@ -144,7 +180,30 @@
   }
 }
 
+// -------------- Breakpoints ----------------------------
+
 @media (max-width: 890px) {
+  .header_section {
+    border: 0;
+    padding: 1rem 0;
+
+    &.header_scrolling {
+      .nav {
+        padding: 0;
+      }
+
+      .logo_link {
+        margin: 0;
+      }
+    }
+  }
+
+  .nav {
+    clip-path: none;
+    padding: 1.25rem 0;
+    background: transparent;
+  }
+
   .nav_list {
     position: fixed;
     top: 0;
@@ -211,7 +270,7 @@
   }
 
   .menu_btn {
-    display: block;
+    display: flex;
   }
 
   .close_menu {
@@ -229,10 +288,6 @@
 }
 
 @media (max-width: 480px) {
-  .header_section {
-    padding: 1.75rem 0 1rem;
-  }
-
   .logo_img {
     height: 2.65rem;
   }

@@ -3,6 +3,7 @@ import { SocialLink } from "./SocialLink";
 import { FiGithub } from "react-icons/fi";
 import { SlSocialLinkedin, SlSocialFacebook } from "react-icons/sl";
 import { RxInstagramLogo, RxTwitterLogo } from "react-icons/rx";
+import { CiDesktopMouse2 } from "react-icons/ci";
 import "../styles/hero.scss";
 
 export const Hero = () => {
@@ -47,6 +48,22 @@ export const Hero = () => {
         <div className="right_side">
           <a className="email_link" href="mailto:jsarturo.dev@gmail.com">
             jsarturo.dev@gmail.com
+          </a>
+        </div>
+      </div>
+
+      <div className="container">
+        <div className="scroll_down">
+          <a href="#" className="scroll_link">
+            <span className="scroll_icon">
+              <CiDesktopMouse2 />
+            </span>
+            <div className="scroll_data">
+              <h4 className="scroll_title">{t("hero.scroll_title")}</h4>
+              <p className="scroll_description">
+                {t("hero.scroll_description")}
+              </p>
+            </div>
           </a>
         </div>
       </div>

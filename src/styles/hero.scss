@@ -1,13 +1,14 @@
 .hero {
   &_section {
-    margin-top: 9rem;
-    // border: 1px solid red;
+    background-color: var(--bg-body-light);
+    border: 1rem solid var(--bg-body);
+    padding: 9rem 0 2.5rem;
+    position: relative;
   }
 
   &_data {
-    padding-left: 5rem;
+    padding-left: 4.5rem;
     padding-right: 3rem;
-    // border: 1px solid yellow;
     position: relative;
   }
 
@@ -24,7 +25,6 @@
     line-height: 1.1;
     margin-bottom: 0.5rem;
     font-family: var(--font-inter);
-    // border: 1px solid;
   }
 
   &_subtitle {
@@ -32,7 +32,6 @@
     margin-bottom: 2.5rem;
     font-family: var(--font-inter);
     line-height: 1.1;
-    // border: 1px solid;
   }
 
   &_description {
@@ -42,14 +41,38 @@
   }
 
   &_btn {
-    background: none;
-    border: 1px solid var(--green);
-    color: var(--green);
+    background-color: var(--green);
+    color: var(--bg-body);
     font-size: 0.9rem;
+    font-weight: 700;
     margin-top: 3.5rem;
-    padding: 1rem 1.5rem;
-    border-radius: 0.25rem;
+    padding: 1.1rem 1.5rem;
     display: inline-block;
+    clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 100%);
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 0;
+      height: 300%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      background: var(--titles-color);
+      transition: 0.5s ease-out;
+      display: block;
+      z-index: -1;
+    }
+
+    &:hover {
+      &::before {
+        width: 110%;
+      }
+    }
+
   }
 }
 
@@ -63,7 +86,7 @@
     content: '';
     position: absolute;
     width: 0.85px;
-    height: 85px;
+    height: 75px;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -109,7 +132,81 @@
   }
 }
 
+.scroll {
+  &_down {
+    background-color: var(--bg-body);
+    padding: 1rem 6rem 1rem 1.25rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 15px 15px;
+      border-color: transparent transparent var(--bg-body) transparent;
+    }
+
+    &::before {
+      bottom: 0;
+      left: -15px;
+    }
+
+    &::after {
+      top: -15px;
+      right: 0;
+    }
+  }
+
+  &_link {
+    color: var(--gray);
+    display: flex;
+    align-items: flex-end;
+    column-gap: 0.5rem;
+  }
+
+  &_icon {
+    font-size: 1.5rem;
+    color: var(--green);
+    animation: MoveUpDown 4s linear infinite;
+  }
+
+  @keyframes MoveUpDown {
+
+    0%,
+    100% {
+      transform: translateY(6px);
+    }
+
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+
+  &_title {
+    color: var(--titles-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  &_description {
+    font-size: 0.7rem;
+  }
+}
+
+// -------------- Breakpoints ----------------------------
+
 @media (max-width: 890px) {
+
+  .hero_section {
+    border: 0;
+    padding: 9rem 0 1rem;
+  }
+
   .left_side,
   .right_side {
     display: none;
@@ -122,6 +219,36 @@
 
   .hero_title {
     margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .scroll {
+    &_down {
+      position: static;
+      right: auto;
+      padding: 1rem;
+      padding-left: 0;
+      margin-top: 1.5rem;
+      background-color: var(--bg-body-light);
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+
+    &_icon {
+      font-size: 2rem;
+    }
+
+    &_title {
+      font-size: 1rem;
+    }
+
+    &_description {
+      font-size: 0.9rem;
+    }
   }
 }
 

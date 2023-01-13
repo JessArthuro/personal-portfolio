@@ -11,6 +11,8 @@
     "title": "Hola, mi nombre es",
     "subtitle": "Construyo sitios web y aplicaciones increíbles.",
     "description": "Soy un desarrollador web front-end e Ingeniero en Sistemas Computacionales que disfruta crear conceptos fantásticos y experiencias digitales para la web.",
-    "button": "Contáctame"
+    "button": "Contáctame",
+    "scroll_title": "Desplázate hacia abajo",
+    "scroll_description": "para descubrir más"
   }
 }
