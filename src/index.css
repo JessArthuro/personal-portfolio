@@ -22,7 +22,7 @@
 }
 
 body {
-  background-color: var(--bg-body);
+  background-color: var(--bg-body-dark);
   color: var(--gray);
 }
 

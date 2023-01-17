@@ -1,6 +1,6 @@
 {
   "header": {
-    "about": "About Me",
+    "about": "About",
     "experience": "Experience",
     "projects": "Projects",
     "contact": "Contact",
@@ -14,5 +14,23 @@
     "button": "Contact me",
     "scroll_title": "Scroll down",
     "scroll_description": "to discover more"
+  },
+  "section_titles": {
+    "about": "Who I am",
+    "experience": "Where I’ve worked",
+    "projects": "Some featured projects",
+    "contact": "Make contact with me"
+  },
+  "projects": {
+    "description_morty": "A web application that consumes the Rick and Morty API. Includes search bar, pagination, filters, and dynamic routing.",
+    "description_ag3": "Meet this web application created to book tourist transportation services in the city of Cancun.",
+    "description_olympia": "Website to find accommodation options, including hotels and resorts. He helped me put into practice what I learned in React.",
+    "description_medicom": "This website contains the most important data of a hospital, such as its trajectory, the medical departments and the team of doctors.",
+    "description_todos": "Web application built in React to be able to create, complete and delete TODOs using data persistence with localStorage.",
+    "description_interio": "Web project where I put into practice all the skills I have acquired in layout and also the optimization of elements.",
+    "description_fylo": "Develop this webpage to meet a Frontend Mentor challenge about a cloud storage application.",
+    "description_uniqlo": "A simple and minimalist website that simulates a virtual store. I put into practice the animation of elements using ScrollReveal.",
+    "description_motosport": "Web page that includes different data on sports motorcycles. Personally, it was the project that I enjoyed building the most.",
+    "description_patronis": "One of the first websites I built using Bootstrap. I learned a lot about the grid system."
   }
 }

@@ -3,6 +3,7 @@
   padding-left: 5rem;
   color: var(--titles-color);
   font-family: var(--font-inter);
+  font-weight: 600;
   letter-spacing: 0.35px;
   position: relative;
 
@@ -14,6 +15,7 @@
     content: "0"attr(data-number) ".";
     margin-right: 0.5rem;
     font-family: var(--font-mono);
+    font-weight: 500;
     color: var(--green);
   }
 }

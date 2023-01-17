@@ -1,6 +1,6 @@
 {
   "header": {
-    "about": "Acerca De Mí",
+    "about": "Acerca De",
     "experience": "Experiencia",
     "projects": "Proyectos",
     "contact": "Contacto",
@@ -14,5 +14,23 @@
     "button": "Contáctame",
     "scroll_title": "Desplázate hacia abajo",
     "scroll_description": "para descubrir más"
+  },
+  "section_titles": {
+    "about": "Quién soy",
+    "experience": "Dónde he trabajado",
+    "projects": "Algunos proyectos destacados",
+    "contact": "Ponte en contacto conmigo"
+  },
+  "projects": {
+    "description_morty": "Una aplicación web que consume la API de Rick and Morty. Incluye barra de búsqueda, paginación, filtros y enrutamiento dinámico.", 
+    "description_ag3": "Conoce esta aplicación web creada para reservar servicios de transportación turística en la ciudad de Cancún.",
+    "description_olympia": "Sitio web para encontrar opciones de alojamiento, incluidos hoteles y resorts. Me ayudo a poner en práctica lo aprendido en React.",
+    "description_medicom": "Este sitio web contiene los datos más importantes de un hospital, como su trayectoria, los departamentos médicos y el equipo de doctores.",
+    "description_todos": "Aplicación web construida en React para poder crear, completar y eliminar TODOs usando persistencia de datos con localStorage.",
+    "description_interio": "Proyecto web en donde puse en práctica todas las habilidades que he adquirido en maquetación y también la optimización de elementos.",
+    "description_fylo": "Desarrolle esta página web para cumplir un reto de Frontend Mentor sobre una aplicación de almacenamiento en la nube.",
+    "description_uniqlo": "Un sitio web simple y minimalista que simula una tienda virtual. Puse en práctica la animación de elementos usando ScrollReveal.",
+    "description_motosport": "Página web que incluye distintos datos sobre motos deportivas. Personalmente, fue el proyecto que más disfrute construir.",
+    "description_patronis": "Uno de los primeros sitios web que construí utilizando Bootstrap. Aprendí mucho sobre el sistema de cuadrículas (Grid)."
   }
 }

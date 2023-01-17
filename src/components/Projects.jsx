@@ -1,26 +1,30 @@
-import imgUniqlo from "../assets/uniqlo.png";
-import imgPatronis from "../assets/patronis.png";
-import imgTasks from "../assets/tasks.png";
-import imgMedicom from "../assets/medicom.png";
-import imgOlympia from "../assets/olympia.png";
-import imgRickMorty from "../assets/rickmorty.png";
-import imgAg3 from "../assets/ag3.png";
-import imgInterio from "../assets/interio.png";
-import imgMotosport from "../assets/motosport.png";
-import imgFylo from "../assets/fylo.png";
-
+import { useTranslation } from "react-i18next";
 import { ProjectsItem } from "./ProjectsItem";
 import { TechName } from "./TechName";
-import "../styles/projects.scss";
 import { SectionTitles } from "./SectionTitles";
 
+import imgRickMorty from "../assets/rickmorty.png";
+import imgAg3 from "../assets/ag3.png";
+import imgOlympia from "../assets/olympia.png";
+import imgMedicom from "../assets/medicom.png";
+import imgTasks from "../assets/tasks.png";
+import imgInterio from "../assets/interio.png";
+import imgFylo from "../assets/fylo.png";
+import imgUniqlo from "../assets/uniqlo.png";
+import imgMotosport from "../assets/motosport.png";
+import imgPatronis from "../assets/patronis.png";
+
+import "../styles/projects.scss";
+
 export const Projects = () => {
+  const [t] = useTranslation("global");
+
   return (
     <section className="projects_section" id="projects">
       <div className="container">
         <SectionTitles
           number="3"
-          name="Algunos proyectos que he desarrollado"
+          name={t("section_titles.projects")}
         />
 
         <div className="projects_grid">
@@ -29,7 +33,7 @@ export const Projects = () => {
             imgsrc={imgRickMorty}
             repolink="https://github.com/JessArthuro/wiki-rickandmorty"
             name="Wiki - Rick and Morty"
-            description="Una aplicación web que consume la API de Rick and Morty. Incluye barra de búsqueda, paginación, filtros y enrutamiento dinámico."
+            description={t("projects.description_morty")}
             techname={
               <>
                 <TechName name="React" />
@@ -38,14 +42,12 @@ export const Projects = () => {
               </>
             }
           />
-
           <ProjectsItem
             extlink="https://www.ag3luxury.com/es"
             imgsrc={imgAg3}
             repolink="https://github.com/CantunB/ag3_web"
-            name="AG3 - Transportación Suv's & Van"
-            description="Conoce esta aplicación web creada para reservar servicios de transportación turística en la ciudad de Cancún."
-            // description="Meet this web application created to book tourist transportation services in the city of Cancun."
+            name="AG3 Luxury Travel"
+            description={t("projects.description_ag3")}
             techname={
               <>
                 <TechName name="Laravel" />
@@ -60,7 +62,7 @@ export const Projects = () => {
             imgsrc={imgOlympia}
             repolink="https://github.com/JessArthuro/olympia"
             name="Olympia"
-            description="Sitio web para encontrar opciones de alojamiento, incluidos hoteles y resorts. Me ayudo a poner en práctica lo aprendido en React."
+            description={t("projects.description_olympia")}
             techname={
               <>
                 <TechName name="React" />
@@ -74,7 +76,7 @@ export const Projects = () => {
             imgsrc={imgMedicom}
             repolink="https://github.com/JessArthuro/medicom"
             name="Medicom"
-            description="Este sitio web contiene los datos más importantes de un hospital, como su trayectoria, los departamentos médicos y el equipo de doctores."
+            description={t("projects.description_medicom")}
             techname={
               <>
                 <TechName name="React" />
@@ -84,13 +86,12 @@ export const Projects = () => {
               </>
             }
           />
-
           <ProjectsItem
             extlink="https://jsarturo-tasks.netlify.app/"
             imgsrc={imgTasks}
             repolink="https://github.com/JessArthuro/todo-app"
             name="TODO App"
-            description="Aplicación web construida en React para poder crear, completar y eliminar TODOs usando persistencia de datos con localStorage."
+            description={t("projects.description_todos")}
             techname={
               <>
                 <TechName name="React" />
@@ -99,13 +100,12 @@ export const Projects = () => {
               </>
             }
           />
-
           <ProjectsItem
             extlink="https://jessarthuro.github.io/interio/"
             imgsrc={imgInterio}
             repolink="https://github.com/JessArthuro/interio"
             name="Interio"
-            description="Proyecto web en donde puse en práctica todas las habilidades que he adquirido en maquetación y también la optimización de elementos."
+            description={t("projects.description_interio")}
             techname={
               <>
                 <TechName name="HTML" />
@@ -115,13 +115,12 @@ export const Projects = () => {
               </>
             }
           />
-
           <ProjectsItem
             extlink="https://jessarthuro.github.io/fylo/"
             imgsrc={imgFylo}
             repolink="https://github.com/JessArthuro/fylo"
             name="Fylo"
-            description="Desarrolle esta página web para cumplir un reto de Frontend Mentor sobre una aplicación de almacenamiento en la nube."
+            description={t("projects.description_fylo")}
             techname={
               <>
                 <TechName name="Bootstrap" />
@@ -130,13 +129,12 @@ export const Projects = () => {
               </>
             }
           />
-
           <ProjectsItem
             extlink="https://jessarthuro.github.io/uniqlo/"
             imgsrc={imgUniqlo}
             repolink="https://github.com/JessArthuro/uniqlo"
             name="Uniqlo"
-            description="Un sitio web simple y minimalista que simula una tienda virtual. Puse en práctica la animación de elementos usando ScrollReveal."
+            description={t("projects.description_uniqlo")}
             techname={
               <>
                 <TechName name="HTML" />
@@ -146,13 +144,12 @@ export const Projects = () => {
               </>
             }
           />
-
           <ProjectsItem
             extlink="https://jessarthuro.github.io/motosport/"
             imgsrc={imgMotosport}
             repolink="https://github.com/JessArthuro/motosport"
             name="MotoSport"
-            description="Página web que incluye distintos datos sobre motos deportivas. Personalmente, fue el proyecto que más disfrute construir."
+            description={t("projects.description_motosport")}
             techname={
               <>
                 <TechName name="HTML" />
@@ -167,7 +164,7 @@ export const Projects = () => {
             imgsrc={imgPatronis}
             repolink="https://github.com/JessArthuro/patronis-bar"
             name="Patroni's Bar"
-            description="Uno de los primeros sitios web que construí utilizando Bootstrap. Aprendí mucho sobre el sistema de cuadrículas (Grid)."
+            description={t("projects.description_patronis")}
             techname={
               <>
                 <TechName name="Bootstrap" />
