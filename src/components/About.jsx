@@ -1,7 +1,12 @@
-import React from 'react'
+import { SectionTitles } from "./SectionTitles";
+import "../styles/about.scss";
 
 export const About = () => {
   return (
-    <div style={{ minHeight: "300vh"}}></div>
-  )
-}
+    <section className="about_section" id="about">
+      <div className="container">
+        <SectionTitles number="1" name="About" />
+      </div>
+    </section>
+  );
+};

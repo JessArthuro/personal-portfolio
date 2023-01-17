@@ -1,0 +1,25 @@
+.section_title {
+  font-size: clamp(1.5rem, 4vw, 1.8rem);
+  padding-left: 5rem;
+  color: var(--titles-color);
+  font-family: var(--font-inter);
+  letter-spacing: 0.35px;
+  position: relative;
+
+  span {
+    font-family: var(--font-inter);
+  }
+
+  &::before {
+    content: "0"attr(data-number) ".";
+    margin-right: 0.5rem;
+    font-family: var(--font-mono);
+    color: var(--green);
+  }
+}
+
+@media (max-width: 890px) {
+  .section_title {
+    padding-left: 0;
+  }
+}

@@ -1,7 +1,7 @@
 .hero {
   &_section {
     background-color: var(--bg-body-light);
-    border: 1rem solid var(--bg-body);
+    box-shadow: inset 0.8rem -0.8rem 0 0 var(--bg-body), inset -0.8rem 0 0 var(--bg-body);
     padding: 9rem 0 2.5rem;
     position: relative;
   }
@@ -42,10 +42,10 @@
 
   &_btn {
     background-color: var(--green);
-    color: var(--bg-body);
+    color: var(--bg-body-dark);
     font-size: 0.9rem;
     font-weight: 700;
-    margin-top: 3.5rem;
+    margin: 3.5rem 0 1rem;
     padding: 1.1rem 1.5rem;
     display: inline-block;
     clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 100%);
@@ -85,8 +85,8 @@
   &::after {
     content: '';
     position: absolute;
-    width: 0.85px;
-    height: 75px;
+    width: 1px;
+    height: 82px;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -135,7 +135,7 @@
 .scroll {
   &_down {
     background-color: var(--bg-body);
-    padding: 1rem 6rem 1rem 1.25rem;
+    padding: 1rem 6rem 1.5rem 1.25rem;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -152,13 +152,13 @@
     }
 
     &::before {
-      bottom: 0;
+      bottom: 0.8rem;
       left: -15px;
     }
 
     &::after {
       top: -15px;
-      right: 0;
+      right: 0.8rem;
     }
   }
 
@@ -223,13 +223,18 @@
 }
 
 @media (max-width: 650px) {
+  .hero_section {
+    box-shadow: none;
+    padding: 9rem 0 2rem;
+  }
+
   .scroll {
     &_down {
       position: static;
       right: auto;
       padding: 1rem;
       padding-left: 0;
-      margin-top: 1.5rem;
+      margin-top: 3.5rem;
       background-color: var(--bg-body-light);
 
       &::before,

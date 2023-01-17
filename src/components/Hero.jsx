@@ -3,7 +3,7 @@ import { SocialLink } from "./SocialLink";
 import { FiGithub } from "react-icons/fi";
 import { SlSocialLinkedin, SlSocialFacebook } from "react-icons/sl";
 import { RxInstagramLogo, RxTwitterLogo } from "react-icons/rx";
-import { CiDesktopMouse2 } from "react-icons/ci";
+import { RxChevronDown } from "react-icons/rx";
 import "../styles/hero.scss";
 
 export const Hero = () => {
@@ -54,9 +54,9 @@ export const Hero = () => {
 
       <div className="container">
         <div className="scroll_down">
-          <a href="#" className="scroll_link">
+          <a href="#about" className="scroll_link">
             <span className="scroll_icon">
-              <CiDesktopMouse2 />
+              <RxChevronDown />
             </span>
             <div className="scroll_data">
               <h4 className="scroll_title">{t("hero.scroll_title")}</h4>

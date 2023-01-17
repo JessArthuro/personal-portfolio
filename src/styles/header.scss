@@ -4,28 +4,27 @@
   left: 0;
   width: 100%;
   background-color: var(--bg-body-light);
-  border: 1rem solid var(--bg-body);
-  border-bottom: 0;
+  box-shadow: inset 0.8rem 0.8rem 0 0 var(--bg-body), inset -0.8rem 0 0 var(--bg-body);
+  padding-top: 0.8rem;
   z-index: 30;
+  transition: padding 0.4s ease-out;
 
   &.header_scrolling {
-    background-color: var(--bg-body);
-    border-bottom: 1px solid var(--green);
+    background-color: var(--bg-body-light);
+    box-shadow: 0 3px 3px 0 var(--bg-body);
+    padding-top: 0;
 
     .logo_link {
-      margin-top: -0.75rem;
+      margin-top: 0.35rem;
     }
 
     .logo_img {
-      height: 2.5rem;
+      height: 2.2rem;
     }
 
     .nav {
-      padding: 0.75rem 2.5rem 1.75rem;
-    }
-
-    .languages {
-      margin-top: -0.75rem;
+      padding: 1.5rem 3.5rem;
+      background: none;
     }
   }
 }
@@ -37,7 +36,7 @@
 }
 
 .logo_link {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   transition: margin 0.4s ease-out;
 }
 
@@ -92,7 +91,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 0.5px;
+    height: 1px;
     background: var(--green);
     transform: scaleX(0);
     transform-origin: right;
@@ -125,7 +124,6 @@
   display: flex;
   align-items: center;
   column-gap: 0.75rem;
-  transition: margin 0.4s ease-out;
 
   &_icon {
     color: var(--green);
@@ -159,7 +157,6 @@
     padding: 0.5rem 0.75rem;
     font-size: 0.85rem;
     width: 7rem;
-    border-radius: 0.5rem;
     position: absolute;
     right: 0;
     top: 2rem;
@@ -184,16 +181,19 @@
 
 @media (max-width: 890px) {
   .header_section {
-    border: 0;
-    padding: 1rem 0;
+    .logo_link {
+      margin-top: 0;
+    }
 
     &.header_scrolling {
-      .nav {
-        padding: 0;
+      padding: 0.75rem 0;
+
+      .logo_img {
+        height: 2.5rem;
       }
 
-      .logo_link {
-        margin: 0;
+      .nav {
+        padding: 0;
       }
     }
   }
@@ -287,8 +287,8 @@
   }
 }
 
-@media (max-width: 480px) {
-  .logo_img {
-    height: 2.65rem;
+@media (max-width: 650px) {
+  .header_section {
+    box-shadow: none;
   }
 }

@@ -17,17 +17,17 @@ export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const btnRef = useRef();
 
-  useEffect(() => {
-    const closeDropdown = (e) => {
-      if (e.path[0] !== btnRef.current) {
-        setIsOpen(false);
-      }
-    };
+  // useEffect(() => {
+  //   const closeDropdown = (e) => {
+  //     if (e.path[0] !== btnRef.current) {
+  //       setIsOpen(false);
+  //     }
+  //   };
 
-    document.body.addEventListener("click", closeDropdown);
+  //   document.body.addEventListener("click", closeDropdown);
 
-    return () => document.body.removeEventListener("click", closeDropdown);
-  }, []);
+  //   return () => document.body.removeEventListener("click", closeDropdown);
+  // }, []);
 
   const [headerScroll, setHeaderScroll] = useState(false);
 
@@ -60,22 +60,22 @@ export const Header = () => {
         <div className="nav">
           <ol className={`nav_list ${menu ? "open_menu" : ""}`}>
             <li className="nav_item">
-              <a className="nav_link" href="#">
+              <a className="nav_link" href="#about">
                 {t("header.about")}
               </a>
             </li>
             <li className="nav_item">
-              <a className="nav_link" href="#">
+              <a className="nav_link" href="#experience">
                 {t("header.experience")}
               </a>
             </li>
             <li className="nav_item">
-              <a className="nav_link" href="#">
+              <a className="nav_link" href="#projects">
                 {t("header.projects")}
               </a>
             </li>
             <li className="nav_item">
-              <a className="nav_link" href="#">
+              <a className="nav_link" href="#contact">
                 {t("header.contact")}
               </a>
             </li>
