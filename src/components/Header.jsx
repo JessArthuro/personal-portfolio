@@ -17,17 +17,16 @@ export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const btnRef = useRef();
 
-  // useEffect(() => {
-  //   const closeDropdown = (e) => {
-  //     if (e.path[0] !== btnRef.current) {
-  //       setIsOpen(false);
-  //     }
-  //   };
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (!btnRef.current.contains(e.target)) {
+        setIsOpen(false);
+      }
+    };
 
-  //   document.body.addEventListener("click", closeDropdown);
-
-  //   return () => document.body.removeEventListener("click", closeDropdown);
-  // }, []);
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, [btnRef]);
 
   const [headerScroll, setHeaderScroll] = useState(false);
 
@@ -60,22 +59,38 @@ export const Header = () => {
         <div className="nav">
           <ol className={`nav_list ${menu ? "open_menu" : ""}`}>
             <li className="nav_item">
-              <a className="nav_link" href="#about">
+              <a
+                className="nav_link"
+                href="#about"
+                onClick={() => setMenu(false)}
+              >
                 {t("header.about")}
               </a>
             </li>
             <li className="nav_item">
-              <a className="nav_link" href="#experience">
+              <a
+                className="nav_link"
+                href="#experience"
+                onClick={() => setMenu(false)}
+              >
                 {t("header.experience")}
               </a>
             </li>
             <li className="nav_item">
-              <a className="nav_link" href="#projects">
+              <a
+                className="nav_link"
+                href="#projects"
+                onClick={() => setMenu(false)}
+              >
                 {t("header.projects")}
               </a>
             </li>
             <li className="nav_item">
-              <a className="nav_link" href="#contact">
+              <a
+                className="nav_link"
+                href="#contact"
+                onClick={() => setMenu(false)}
+              >
                 {t("header.contact")}
               </a>
             </li>
@@ -95,6 +110,7 @@ export const Header = () => {
           <span className="languages_icon">
             <HiLanguage />
           </span>
+
           <button
             ref={btnRef}
             className="languages_btn"
