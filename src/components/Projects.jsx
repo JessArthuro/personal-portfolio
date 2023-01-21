@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { ProjectsItem } from "./ProjectsItem";
 import { TechName } from "./TechName";
@@ -19,13 +20,12 @@ import "../styles/projects.scss";
 export const Projects = () => {
   const [t] = useTranslation("global");
 
+  const [showItems, setShowItems] = useState(false);
+
   return (
     <section className="projects_section" id="projects">
       <div className="container">
-        <SectionTitles
-          number="3"
-          name={t("section_titles.projects")}
-        />
+        <SectionTitles number="3" name={t("section_titles.projects")} />
 
         <div className="projects_grid">
           <ProjectsItem
@@ -115,66 +115,78 @@ export const Projects = () => {
               </>
             }
           />
-          <ProjectsItem
-            extlink="https://jessarthuro.github.io/fylo/"
-            imgsrc={imgFylo}
-            repolink="https://github.com/JessArthuro/fylo"
-            name="Fylo"
-            description={t("projects.description_fylo")}
-            techname={
-              <>
-                <TechName name="Bootstrap" />
-                <TechName name="JS" />
-                <TechName name="ScrollReveal" />
-              </>
-            }
-          />
-          <ProjectsItem
-            extlink="https://jessarthuro.github.io/uniqlo/"
-            imgsrc={imgUniqlo}
-            repolink="https://github.com/JessArthuro/uniqlo"
-            name="Uniqlo"
-            description={t("projects.description_uniqlo")}
-            techname={
-              <>
-                <TechName name="HTML" />
-                <TechName name="CSS" />
-                <TechName name="JS" />
-                <TechName name="Boxicons" />
-              </>
-            }
-          />
-          <ProjectsItem
-            extlink="https://jessarthuro.github.io/motosport/"
-            imgsrc={imgMotosport}
-            repolink="https://github.com/JessArthuro/motosport"
-            name="MotoSport"
-            description={t("projects.description_motosport")}
-            techname={
-              <>
-                <TechName name="HTML" />
-                <TechName name="CSS" />
-                <TechName name="JS" />
-                <TechName name="Mixitup" />
-              </>
-            }
-          />
-          <ProjectsItem
-            extlink="https://jessarthuro.github.io/patronis-bar/"
-            imgsrc={imgPatronis}
-            repolink="https://github.com/JessArthuro/patronis-bar"
-            name="Patroni's Bar"
-            description={t("projects.description_patronis")}
-            techname={
-              <>
-                <TechName name="Bootstrap" />
-                <TechName name="JS" />
-                <TechName name="FontAwesome" />
-                <TechName name="Swiper" />
-              </>
-            }
-          />
+
+          {showItems ? (
+            <>
+              <ProjectsItem
+                extlink="https://jessarthuro.github.io/fylo/"
+                imgsrc={imgFylo}
+                repolink="https://github.com/JessArthuro/fylo"
+                name="Fylo"
+                description={t("projects.description_fylo")}
+                techname={
+                  <>
+                    <TechName name="Bootstrap" />
+                    <TechName name="JS" />
+                    <TechName name="ScrollReveal" />
+                  </>
+                }
+              />
+              <ProjectsItem
+                extlink="https://jessarthuro.github.io/uniqlo/"
+                imgsrc={imgUniqlo}
+                repolink="https://github.com/JessArthuro/uniqlo"
+                name="Uniqlo"
+                description={t("projects.description_uniqlo")}
+                techname={
+                  <>
+                    <TechName name="HTML" />
+                    <TechName name="CSS" />
+                    <TechName name="JS" />
+                    <TechName name="Boxicons" />
+                  </>
+                }
+              />
+              <ProjectsItem
+                extlink="https://jessarthuro.github.io/motosport/"
+                imgsrc={imgMotosport}
+                repolink="https://github.com/JessArthuro/motosport"
+                name="MotoSport"
+                description={t("projects.description_motosport")}
+                techname={
+                  <>
+                    <TechName name="HTML" />
+                    <TechName name="CSS" />
+                    <TechName name="JS" />
+                    <TechName name="Mixitup" />
+                  </>
+                }
+              />
+              <ProjectsItem
+                extlink="https://jessarthuro.github.io/patronis-bar/"
+                imgsrc={imgPatronis}
+                repolink="https://github.com/JessArthuro/patronis-bar"
+                name="Patroni's Bar"
+                description={t("projects.description_patronis")}
+                techname={
+                  <>
+                    <TechName name="Bootstrap" />
+                    <TechName name="JS" />
+                    <TechName name="FontAwesome" />
+                    <TechName name="Swiper" />
+                  </>
+                }
+              />
+            </>
+          ) : null}
         </div>
+
+        <button
+          className="btn_showitems"
+          onClick={() => setShowItems((prev) => !prev)}
+        >
+          {showItems ? t("projects.btn_less") : t("projects.btn_more")}
+        </button>
       </div>
     </section>
   );

@@ -31,6 +31,8 @@
     "description_fylo": "Desarrolle esta página web para cumplir un reto de Frontend Mentor sobre una aplicación de almacenamiento en la nube.",
     "description_uniqlo": "Un sitio web simple y minimalista que simula una tienda virtual. Puse en práctica la animación de elementos usando ScrollReveal.",
     "description_motosport": "Página web que incluye distintos datos sobre motos deportivas. Personalmente, fue el proyecto que más disfrute construir.",
-    "description_patronis": "Uno de los primeros sitios web que construí utilizando Bootstrap. Aprendí mucho sobre el sistema de cuadrículas (Grid)."
+    "description_patronis": "Uno de los primeros sitios web que construí utilizando Bootstrap. Aprendí mucho sobre el sistema de cuadrículas (Grid).",
+    "btn_more": "Mostrar más",
+    "btn_less": "Mostrar menos"
   }
 }

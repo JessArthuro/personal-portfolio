@@ -31,6 +31,8 @@
     "description_fylo": "Develop this webpage to meet a Frontend Mentor challenge about a cloud storage application.",
     "description_uniqlo": "A simple and minimalist website that simulates a virtual store. I put into practice the animation of elements using ScrollReveal.",
     "description_motosport": "Web page that includes different data on sports motorcycles. Personally, it was the project that I enjoyed building the most.",
-    "description_patronis": "One of the first websites I built using Bootstrap. I learned a lot about the grid system."
+    "description_patronis": "One of the first websites I built using Bootstrap. I learned a lot about the grid system.",
+    "btn_more": "Show more",
+    "btn_less": "Show less"
   }
 }
