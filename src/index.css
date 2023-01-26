@@ -5,6 +5,10 @@
   --bg-body-light: #031f38;
   --bg-body-dark: #040d18;
   --green: #33ffa9;
+  --blue: #00daff;
+  --purple: #6d58ff;
+  --dark-purple: #362a89;
+  --edges: rgba(136, 146, 176, 0.2);
   --titles-color: #ccd6f6;
   --gray: #8892b0;
   --white: #ffffff;
@@ -22,7 +26,7 @@
 }
 
 body {
-  background-color: var(--bg-body);
+  background-color: var(--bg-body-dark);
   color: var(--gray);
 }
 

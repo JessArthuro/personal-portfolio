@@ -1,9 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { SocialLink } from "./SocialLink";
 import { FiGithub } from "react-icons/fi";
-import { SlSocialLinkedin, SlSocialFacebook } from "react-icons/sl";
+import { SlSocialLinkedin } from "react-icons/sl";
 import { RxInstagramLogo, RxTwitterLogo } from "react-icons/rx";
-import { RxChevronDown } from "react-icons/rx";
+import { BsArrowDownShort } from "react-icons/bs";
+
 import "../styles/hero.scss";
 
 export const Hero = () => {
@@ -13,14 +14,15 @@ export const Hero = () => {
     <section className="hero_section">
       <div className="container hero_data">
         <h1 className="hero_title">{t("hero.title")}</h1>
-        <h2 className="hero_name">Jesús Arturo.</h2>
+        <h2 className="hero_name">Jesús Arturo</h2>
         <h3 className="hero_subtitle">{t("hero.subtitle")}</h3>
         <p className="hero_description">{t("hero.description")}</p>
-        <a href="#contact" className="hero_btn">
-          {t("hero.button")}
-        </a>
 
-        <div className="left_side">
+        <div className="hero_links">
+          <a href="#contact" className="hero_btn">
+            {t("hero.button")}
+          </a>
+
           <div className="social_links">
             <SocialLink
               link="https://github.com/JessArthuro"
@@ -31,41 +33,26 @@ export const Hero = () => {
               icon={<SlSocialLinkedin />}
             />
             <SocialLink
-              link="https://www.facebook.com/jesusarturo.carmonaaguirre"
-              icon={<SlSocialFacebook />}
+              link="https://twitter.com/JessArthuro"
+              icon={<RxTwitterLogo />}
             />
             <SocialLink
               link="https://www.instagram.com/jess_arthuro/"
               icon={<RxInstagramLogo />}
             />
-            <SocialLink
-              link="https://twitter.com/JessArthuro"
-              icon={<RxTwitterLogo />}
-            />
           </div>
         </div>
 
-        <div className="right_side">
-          <a className="email_link" href="mailto:jsarturo.dev@gmail.com">
-            jsarturo.dev@gmail.com
-          </a>
-        </div>
-      </div>
-
-      <div className="container">
         <div className="scroll_down">
           <a href="#about" className="scroll_link">
             <span className="scroll_icon">
-              <RxChevronDown />
+              <BsArrowDownShort />
             </span>
-            <div className="scroll_data">
-              <h4 className="scroll_title">{t("hero.scroll_title")}</h4>
-              <p className="scroll_description">
-                {t("hero.scroll_description")}
-              </p>
-            </div>
           </a>
         </div>
+
+        <div className="top_left_edges"></div>
+        <div className="bottom_right_edges"></div>
       </div>
     </section>
   );
