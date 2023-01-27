@@ -21,6 +21,13 @@
     "projects": "Algunos proyectos destacados",
     "contact": "Ponte en contacto conmigo"
   },
+  "about": {
+    "text1": "Soy un desarrollador frontend con +2 años de experiencia en la creación de productos escalables que ayuden a destacar su empresa o negocio de la competencia. Produzco sitios web elegantes, responsivos y de alta calidad que visualmente son atractivos, además ofrezco una experiencia de usuario excepcional. En ocasiones también hago un poco de diseño en Photoshop y/o Vegas Pro.",
+    "text2": "Durante mi carrera universitaria pude participar en programas de innovación tecnológica en donde fortalecí mis habilidades blandas al poder trabajar con equipos multidisciplinarios.",
+    "text3": "He tenido el privilegio de trabajar en una agencia de transporte turístico, una empresa pública de agua potable y alcantarillado, un gimnasio de boxeo y una institución educativa de nivel medio superior.",
+    "text4": "Actualmente, estoy usando React para crear cosas nuevas.",
+    "text5": "Estas son algunas de las tecnologías con las que he podido trabajar:"
+  },
   "projects": {
     "description_morty": "Una aplicación web que consume la API de Rick and Morty. Incluye barra de búsqueda, paginación, filtros y enrutamiento dinámico.", 
     "description_ag3": "Conoce esta aplicación web creada para reservar servicios de transportación turística en la ciudad de Cancún.",
