@@ -26,14 +26,12 @@ export const Experience = () => {
           <TimelineItem
             img={imgAg3}
             title="AG3 LUXURY TRAVEL"
-            date="Diciembre 2021 - Julio 2022"
+            date={t("experience.ag3_dates")}
             activities={
               <>
-                <ActivitiesItem text="Realice la maquetación y desarrollo frontend del sitio web de esta empresa especializada en el transporte turístico. Tecnologías utilizadas: Laravel, Bootstrap y Vue." />
-
-                <ActivitiesItem text="Actualice el contenido de sus redes sociales y aplique estrategias de marketing para generar campañas publicitarias más exitosas." />
-
-                <ActivitiesItem text="Con la creación del sitio web y la actualización del contenido de sus redes sociales se logró incrementar el número de clientes en un 70%." />
+                <ActivitiesItem text={t("experience.ag3_text1")} />
+                <ActivitiesItem text={t("experience.ag3_text2")} />
+                <ActivitiesItem text={t("experience.ag3_text3")} />
               </>
             }
           />
@@ -41,12 +39,11 @@ export const Experience = () => {
           <TimelineItem
             img={imgSmapac}
             title="SMAPAC"
-            date="Diciembre 2019 - Marzo 2020"
+            date={t("experience.smapac_dates")}
             activities={
               <>
-                <ActivitiesItem text="Desarrolle el frontend para un sistema que constaba de 3 procesos: crear requisiciones, actualizar órdenes de compra y registrar productos en un inventario. Tecnologías utilizadas: Laravel, Bootstrap y JS." />
-
-                <ActivitiesItem text="Se logró disminuir en un 50% el tiempo de registro y actualización de dichos procesos." />
+                <ActivitiesItem text={t("experience.smapac_text1")} />
+                <ActivitiesItem text={t("experience.smapac_text2")} />
               </>
             }
           />
@@ -54,12 +51,11 @@ export const Experience = () => {
           <TimelineItem
             img={imgHitzone}
             title="HITZONE BOXFIT"
-            date="Agosto 2019 - Enero 2020"
+            date={t("experience.hitzone_dates")}
             activities={
               <>
-                <ActivitiesItem text="Realice la maquetación y desarrollo de un sistema de control de clientes para facilitar el registro de usuarios y administrar mensualidades. Tecnologías utilizadas: NodeJs, Bootstrap y DataTables." />
-
-                <ActivitiesItem text="Se automatizó su antiguo registro con papel y lápiz, obteniendo un incremento del 80% de rendimiento." />
+                <ActivitiesItem text={t("experience.hitzone_text1")} />
+                <ActivitiesItem text={t("experience.hitzone_text2")} />
               </>
             }
           />
@@ -67,14 +63,12 @@ export const Experience = () => {
           <TimelineItem
             img={imgCbta}
             title="CBTA No. 62"
-            date="Agosto 2018 - Marzo 2019"
+            date={t("experience.cbta_dates")}
             activities={
               <>
-                <ActivitiesItem text="Diseñe y desarrolle una página web para exponer las distintas especialidades con las que cuenta la escuela. Tecnologías utilizadas: HTML, CSS y JS." />
-
-                <ActivitiesItem text="Realice mantenimiento preventivo y correctivo del área de centro de cómputo." />
-
-                <ActivitiesItem text="La creación de la página web logro que más personas pudieran conocer la oferta educativa de la institución." />
+                <ActivitiesItem text={t("experience.cbta_text1")} />
+                <ActivitiesItem text={t("experience.cbta_text2")} />
+                <ActivitiesItem text={t("experience.cbta_text3")} />
               </>
             }
           />

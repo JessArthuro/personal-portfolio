@@ -28,6 +28,22 @@
     "text4": "I'm currently using React to create new stuff.",
     "text5": "These are some of the technologies I have been able to work with:"
   },
+  "experience": {
+    "ag3_dates": "December 2021 - July 2022",
+    "ag3_text1": "I made the layout and frontend development of the website of this company specialized in tourist transport. Technologies used: Laravel, Bootstrap and Vue.", 
+    "ag3_text2": "I updated the content of your social networks and applied marketing strategies to generate more successful advertising campaigns.",
+    "ag3_text3": "With the creation of the website and the updating of the content of its social networks, it was possible to increase the number of customers by 70%.",
+    "smapac_dates": "December 2019 - March 2020",
+    "smapac_text1": "I developed the frontend for a system that consisted of 3 processes: create requisitions, update purchase orders and record products in an inventory. Technologies used: Laravel, Bootstrap and JS.",
+    "smapac_text2": "It was possible to reduce by 50% the time of registration and updating of these processes.",
+    "hitzone_dates": "August 2019 - January 2020",
+    "hitzone_text1": "I made the layout and development of a customer control system to facilitate the registration of users and manage their monthly payments. Technologies used: NodeJs, Bootstrap and DataTables.",
+    "hitzone_text2": "His old record with paper and pencil was automated, obtaining an 80% increase in performance.",
+    "cbta_dates": "August 2018 - March 2019",
+    "cbta_text1": "I designed and developed a website to expose the different specialties that the school has. Technologies used: HTML, CSS and JS.",
+    "cbta_text2": "I performed preventive and corrective maintenance of the computer center area.",
+    "cbta_text3": "The creation of the website achieved that more people could know the educational offer of the institution."
+  },
   "projects": {
     "description_morty": "A web application that consumes the Rick and Morty API. Includes search bar, pagination, filters, and dynamic routing.",
     "description_ag3": "Meet this web application created to book tourist transportation services in the city of Cancun.",
