@@ -10,10 +10,11 @@ export const ProjectsItem = ({
   techname,
 }) => {
   return (
-    <article className="projects_item">
+    <article
+      className="projects_item"
+      style={{ backgroundImage: `url(${imgsrc})` }}
+    >
       <div className="item_info">
-        <img className="item_image" src={imgsrc} alt="" />
-
         <div className="item_heading">
           <h3 className="item_title">
             <a href={extlink} target="_blank" rel="noopener noreferrer">
@@ -40,9 +41,8 @@ export const ProjectsItem = ({
           </div>
         </div>
         <p className="item_description">{description}</p>
+        <ul className="item_technologies">{techname}</ul>
       </div>
-
-      <ul className="item_technologies">{techname}</ul>
     </article>
   );
 };

@@ -5,28 +5,75 @@
 
   &_grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr));
-    gap: 1rem;
-    margin: 1.5rem 5rem 0;
-    padding-top: 2.5rem;
-    border-top: 2px solid var(--purple);
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 380px), 1fr));
+    grid-auto-rows: 25px;
+    gap: 1.5rem;
+    margin: 4rem 5rem 0;
   }
 }
 
 .projects_item {
-  background-color: var(--bg-body-light);
-  color: var(--gray);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 2rem;
-  padding: 1.5rem 1rem;
-  min-height: 26rem;
-  position: relative;
+  justify-content: flex-end;
+  border-radius: 0.5rem;
+  overflow: hidden;
   transition: transform 0.4s ease-out;
+  position: relative;
+
+  // hijos impares
+  &:nth-child(odd) {
+    grid-row: span 7;
+  }
+
+  // hijos pares 
+  &:nth-child(even) {
+    grid-row: span 8;
+  }
+
+  // el segundo ultimo 
+  &:nth-last-child(2) {
+    grid-row: span 8;
+  }
+
+  // el ultimo hijo
+  &:last-child {
+    grid-row: span 7;
+  }
 
   &:hover {
-    transform: translateY(-6px);
+    &::before {
+      display: block;
+    }
+
+    .item_info {
+      transform: translate(0);
+      opacity: 1;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, #040d18, transparent);
+    pointer-events: none;
+    display: none;
+  }
+
+  .item_info {
+    height: 100%;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0;
+    transform: translateY(10%);
+    transition: opacity 300ms ease-in-out 0s, transform 400ms ease-in-out 0s;
+    z-index: 10;
   }
 
   .item_heading {
@@ -34,11 +81,11 @@
     justify-content: space-between;
     align-items: center;
     gap: 1.5rem;
-    margin: 1rem 0;
+    margin-bottom: 0.5rem;
   }
 
   .item_title {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     font-weight: 600;
     line-height: 1.1;
 
@@ -77,6 +124,8 @@
     font-size: 0.85rem;
     line-height: 1.4;
     letter-spacing: 0.25px;
+    color: var(--titles-color);
+    margin-bottom: 0.75rem;
   }
 
   .item_technologies {
@@ -88,7 +137,11 @@
 
   .tech_name {
     list-style: none;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    color: var(--titles-color);
+    background-color: var(--edges);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.65rem;
   }
 }
 
@@ -108,6 +161,19 @@
 
 @media (max-width: 890px) {
   .projects_grid {
-    margin: 1.5rem 0 0;
+    margin: 3rem 0 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .projects_item {
+
+    &:nth-child(1),
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6),
+    &:nth-child(8) {
+      background-position: top left;
+    }
   }
 }

@@ -4,16 +4,16 @@ import { ProjectsItem } from "./ProjectsItem";
 import { TechName } from "./TechName";
 import { SectionTitles } from "./SectionTitles";
 
-import imgRickMorty from "../assets/rickmorty.png";
-import imgAg3 from "../assets/ag3.png";
-import imgOlympia from "../assets/olympia.png";
-import imgMedicom from "../assets/medicom.png";
-import imgTasks from "../assets/tasks.png";
-import imgInterio from "../assets/interio.png";
-import imgFylo from "../assets/fylo.png";
-import imgUniqlo from "../assets/uniqlo.png";
-import imgMotosport from "../assets/motosport.png";
-import imgPatronis from "../assets/patronis.png";
+import imgOlympia from "../assets/projects/olympia.jpg";
+import imgAg3 from "../assets/projects/ag3.jpg";
+import imgRickMorty from "../assets/projects/rickmorty.jpg";
+import imgMedicom from "../assets/projects/medicom.jpg";
+import imgTasks from "../assets/projects/tasks.jpg";
+import imgInterio from "../assets/projects/interio.jpg";
+import imgFylo from "../assets/projects/fylo.jpg";
+import imgUniqlo from "../assets/projects/uniqlo.jpg";
+import imgMotosport from "../assets/projects/motosport.jpg";
+import imgPatronis from "../assets/projects/patronis.jpg";
 
 import "../styles/projects.scss";
 
@@ -29,35 +29,6 @@ export const Projects = () => {
 
         <div className="projects_grid">
           <ProjectsItem
-            extlink="https://jsarturo-rickandmorty.netlify.app/"
-            imgsrc={imgRickMorty}
-            repolink="https://github.com/JessArthuro/wiki-rickandmorty"
-            name="Wiki - Rick and Morty"
-            description={t("projects.description_morty")}
-            techname={
-              <>
-                <TechName name="React" />
-                <TechName name="Bootstrap" />
-                <TechName name="SCSS" />
-              </>
-            }
-          />
-          <ProjectsItem
-            extlink="https://www.ag3luxury.com/es"
-            imgsrc={imgAg3}
-            repolink="https://github.com/CantunB/ag3_web"
-            name="AG3 Luxury Travel"
-            description={t("projects.description_ag3")}
-            techname={
-              <>
-                <TechName name="Laravel" />
-                <TechName name="Bootstrap" />
-                <TechName name="CSS" />
-                <TechName name="Vue" />
-              </>
-            }
-          />
-          <ProjectsItem
             extlink="https://jsarturo-olympia.netlify.app/"
             imgsrc={imgOlympia}
             repolink="https://github.com/JessArthuro/olympia"
@@ -71,6 +42,38 @@ export const Projects = () => {
               </>
             }
           />
+
+          <ProjectsItem
+            extlink="https://www.ag3luxury.com/en"
+            imgsrc={imgAg3}
+            repolink="https://github.com/CantunB/ag3_web"
+            name="AG3 Luxury Travel"
+            description={t("projects.description_ag3")}
+            techname={
+              <>
+                <TechName name="Laravel" />
+                <TechName name="Bootstrap" />
+                <TechName name="CSS" />
+                <TechName name="Vue" />
+              </>
+            }
+          />
+
+          <ProjectsItem
+            extlink="https://jsarturo-rickandmorty.netlify.app/"
+            imgsrc={imgRickMorty}
+            repolink="https://github.com/JessArthuro/wiki-rickandmorty"
+            name="Wiki - Rick and Morty"
+            description={t("projects.description_morty")}
+            techname={
+              <>
+                <TechName name="React" />
+                <TechName name="Bootstrap" />
+                <TechName name="SCSS" />
+              </>
+            }
+          />
+
           <ProjectsItem
             extlink="https://jsarturo-medicom.netlify.app/"
             imgsrc={imgMedicom}
