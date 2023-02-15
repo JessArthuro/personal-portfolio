@@ -45,9 +45,10 @@
 
 .about_image {
   height: 23rem;
+  border-radius: 1rem;
   object-fit: cover;
-  outline: 3px solid var(--purple);
-  outline-offset: -8px;
+  outline: 2px solid var(--purple);
+  outline-offset: -10px;
 }
 
 // -------------- Breakpoints ----------------------------

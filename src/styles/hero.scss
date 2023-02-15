@@ -123,21 +123,6 @@ $border: 1.9px dashed var(--edges);
     .social_links {
       display: flex;
       gap: 1.25rem;
-
-      .social_link {
-        border: 1px solid var(--gray);
-        color: var(--purple);
-        padding: 0.65rem;
-        border-radius: 50%;
-        display: flex;
-        font-size: 1.1rem;
-        transition: all 0.4s ease-out;
-
-        &:hover {
-          border: 1px solid var(--purple);
-          transform: translateY(-5px);
-        }
-      }
     }
   }
 

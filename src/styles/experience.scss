@@ -29,14 +29,43 @@
   &::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: -10px;
     left: 50%;
     transform: translateX(-50%);
+    background-color: var(--bg-body-dark);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    outline: 5px solid var(--bg-body-dark);
     background-color: var(--purple);
+    box-shadow: 0 0 0 0 rgba(109, 88, 255, 1);
+    animation: shadow 2s infinite;
+  }
+
+  @keyframes shadow {
+    0% {
+      transform: translateX(-50%) scale(0.95);
+      box-shadow: 0 0 0 0 rgba(109, 88, 255, 0.7);
+    }
+
+    70% {
+      transform: translateX(-50%) scale(1);
+      box-shadow: 0 0 0 15px rgba(109, 88, 255, 0);
+    }
+
+    100% {
+      transform: translateX(-50%) scale(0.95);
+      box-shadow: 0 0 0 0 rgba(109, 88, 255, 0);
+    }
   }
 
   // Hijos impares
@@ -124,7 +153,9 @@
   }
 
   .timeline_item {
-    &::before {
+
+    &::before,
+    &::after {
       left: 0;
     }
 
@@ -153,15 +184,13 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 560px) {
   .timeline_item {
-    &::before {
-      width: 15px;
-      height: 15px;
-    }
-
     &-content {
       margin-left: 2rem;
+      border: 0;
+      box-shadow: none;
+      padding: 0;
     }
 
     &-date {
@@ -170,11 +199,6 @@
   }
 
   .activities_item {
-    padding-left: 0 !important;
     font-size: 0.95rem;
-
-    .arrow_icon {
-      display: none;
-    }
   }
 }
