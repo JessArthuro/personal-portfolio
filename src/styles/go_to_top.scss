@@ -1,0 +1,73 @@
+.btn_top {
+  position: fixed;
+  bottom: -10%;
+  right: 1.5rem;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  border: 0;
+  background-color: var(--blue);
+  color: var(--bg-body-dark);
+  outline: 1.5px dashed #1d3557;
+  outline-offset: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 999;
+  transition: 0.5s ease-out;
+
+  &.visible {
+    bottom: 2rem;
+    animation: bounce 2s ease 0s 1 normal forwards;
+  }
+
+  @keyframes bounce {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 1;
+      transform: translateY(35px);
+    }
+
+    40% {
+      animation-timing-function: ease-in;
+      transform: translateY(18px);
+    }
+
+    65% {
+      animation-timing-function: ease-in;
+      transform: translateY(10px);
+    }
+
+    82% {
+      animation-timing-function: ease-in;
+      transform: translateY(6px);
+    }
+
+    93% {
+      animation-timing-function: ease-in;
+      transform: translateY(4px);
+    }
+
+    25%,
+    55%,
+    75%,
+    87% {
+      animation-timing-function: ease-out;
+      transform: translateY(0px);
+    }
+
+    100% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .btn_top {
+    right: 1rem;
+  }
+}

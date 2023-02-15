@@ -1,5 +1,6 @@
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
+import { GoToTop } from "./components/GoToTop";
 import { About } from "./components/About";
 import { Experience } from "./components/Experience";
 import { Projects } from "./components/Projects";
@@ -13,6 +14,7 @@ function App() {
 
       <main>
         <Hero />
+        <GoToTop />
         <About />
         <Experience />
         <Projects />
