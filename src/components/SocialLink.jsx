@@ -1,3 +1,5 @@
+import "../styles/social_link.scss";
+
 export const SocialLink = ({ link, icon }) => {
   return (
     <a

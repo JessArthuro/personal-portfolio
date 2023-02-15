@@ -19,7 +19,7 @@
     "about": "Who I am?",
     "experience": "Where I’ve worked?",
     "projects": "Some featured projects",
-    "contact": "Make contact with me"
+    "contact": "Contact"
   },
   "about": {
     "text1": "I am a frontend developer with +2 years of experience in creating scalable products that help stand out your company or business from the competition. I produce high-quality, responsive, elegant websites that are visually appealing, plus deliver an exceptional user experience. On occasion I also do a bit of design in Photoshop and/or Vegas Pro.",
@@ -57,5 +57,15 @@
     "description_patronis": "One of the first websites I built using Bootstrap. I learned a lot about the grid system.",
     "btn_more": "Show more",
     "btn_less": "Show less"
+  },
+  "contact": {
+    "subtitle": "Did you like what you saw?",
+    "description": "Let's start a chat, we can create an incredible project together or if you just want us to talk about a specific topic, don't hesitate to contact me through my email or on my different social networks.",
+    "btn": "Say Hello"
+  },
+  "footer": {
+    "logo": "Front-end web developer",
+    "author_1": "Made with",
+    "author_2": "by"
   }
 }
