@@ -118,46 +118,12 @@ $border: 1.9px dashed var(--edges);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 3.5rem 0 3rem;
+    margin: 3.5rem 0 4rem;
 
     .social_links {
       display: flex;
       gap: 1.25rem;
     }
-  }
-
-  &_btn {
-    background-color: var(--purple);
-    color: var(--white);
-    font-size: 0.9rem;
-    font-weight: 500;
-    padding: 1.1rem 1.5rem;
-    display: inline-block;
-    clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 100%);
-    overflow: hidden;
-    z-index: 1;
-    position: relative;
-
-    &::before {
-      content: '';
-      width: 0;
-      height: 300%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) rotate(45deg);
-      background: var(--dark-purple);
-      transition: 0.5s ease-out;
-      display: block;
-      z-index: -1;
-    }
-
-    &:hover {
-      &::before {
-        width: 110%;
-      }
-    }
-
   }
 }
 
@@ -237,7 +203,7 @@ $border: 1.9px dashed var(--edges);
   }
 
   .hero_links {
-    margin: 3.5rem 0 4rem;
+    margin: 3.5rem 0 5rem;
 
     .social_links {
       display: none;

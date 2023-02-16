@@ -145,20 +145,6 @@
   }
 }
 
-.btn_showitems {
-  background-color: var(--purple);
-  padding: 1.1rem 1.5rem;
-  color: var(--white);
-  font-size: 0.9rem;
-  font-weight: 500;
-  display: block;
-  border: 0;
-  outline: 0;
-  margin: 4rem auto 0;
-  clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 100%);
-  cursor: pointer;
-}
-
 @media (max-width: 890px) {
   .projects_grid {
     margin: 3rem 0 0;

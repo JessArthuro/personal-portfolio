@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { SectionTitles } from "./SectionTitles";
 import "../styles/contact.scss";
+import { BtnPrimary } from "./BtnPrimary";
 
 export const Contact = () => {
   const [t] = useTranslation("global");
@@ -17,9 +18,11 @@ export const Contact = () => {
         <h3 className="contact_subtitle">{t("contact.subtitle")}</h3>
         <p className="contact_description">{t("contact.description")}</p>
 
-        <a href="mailto:jsarturo.dev@gmail.com" className="contact_btn">
-          {t("contact.btn")}
-        </a>
+        <BtnPrimary
+          link={true}
+          name={t("contact.btn")}
+          href="mailto:jsarturo.dev@gmail.com"
+        />
       </div>
     </section>
   );

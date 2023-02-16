@@ -6,6 +6,7 @@ import { RxInstagramLogo, RxTwitterLogo } from "react-icons/rx";
 import { BsArrowDownShort } from "react-icons/bs";
 
 import "../styles/hero.scss";
+import { BtnPrimary } from "./BtnPrimary";
 
 export const Hero = () => {
   const [t] = useTranslation("global");
@@ -19,9 +20,7 @@ export const Hero = () => {
         <p className="hero_description">{t("hero.description")}</p>
 
         <div className="hero_links">
-          <a href="#contact" className="hero_btn">
-            {t("hero.button")}
-          </a>
+          <BtnPrimary link={true} name={t("hero.button")} href="#about" />
 
           <div className="social_links">
             <SocialLink

@@ -16,6 +16,7 @@ import imgMotosport from "../assets/projects/motosport.jpg";
 import imgPatronis from "../assets/projects/patronis.jpg";
 
 import "../styles/projects.scss";
+import { BtnPrimary } from "./BtnPrimary";
 
 export const Projects = () => {
   const [t] = useTranslation("global");
@@ -184,12 +185,12 @@ export const Projects = () => {
           ) : null}
         </div>
 
-        <button
-          className="btn_showitems"
-          onClick={() => setShowItems((prev) => !prev)}
-        >
-          {showItems ? t("projects.btn_less") : t("projects.btn_more")}
-        </button>
+        <BtnPrimary
+          btn={true}
+          projects={true}
+          name={showItems ? t("projects.btn_less") : t("projects.btn_more")}
+          handleClick={() => setShowItems((prev) => !prev)}
+        />
       </div>
     </section>
   );
