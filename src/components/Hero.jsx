@@ -3,7 +3,6 @@ import { SocialLink } from "./SocialLink";
 import { FiGithub } from "react-icons/fi";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { RxInstagramLogo, RxTwitterLogo } from "react-icons/rx";
-import { BsArrowDownShort } from "react-icons/bs";
 
 import "../styles/hero.scss";
 import { BtnPrimary } from "./BtnPrimary";
@@ -43,11 +42,7 @@ export const Hero = () => {
         </div>
 
         <div className="scroll_down">
-          <a href="#about" className="scroll_link">
-            <span className="scroll_icon">
-              <BsArrowDownShort />
-            </span>
-          </a>
+          <a href="#about" className="scroll_link"></a>
         </div>
 
         <div className="top_left_edges"></div>
