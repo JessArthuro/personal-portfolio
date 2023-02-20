@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { useTranslation } from "react-i18next";
 import { HiLanguage } from "react-icons/hi2";
 import { IoMdClose } from "react-icons/io";
@@ -16,6 +18,10 @@ export const Header = () => {
 
   const [isOpen, setIsOpen] = useState(false);
   const btnRef = useRef();
+
+  useEffect(() => {
+    AOS.init({ duration: 800, delay: 200, once: true, easing: "ease-out" });
+  }, []);
 
   useEffect(() => {
     const handleClickOutside = (e) => {
@@ -51,7 +57,7 @@ export const Header = () => {
     <header
       className={`header_section ${headerScroll ? "header_scrolling" : ""}`}
     >
-      <nav className="nav_content container">
+      <nav className="nav_content container" data-aos="fade-down">
         <a href="/" className="logo_link">
           <img src={logo} alt="" className="logo_img" />
         </a>

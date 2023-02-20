@@ -28,6 +28,7 @@
 body {
   background-color: var(--bg-body-dark);
   color: var(--gray);
+  overflow-x: hidden;
 }
 
 .container {
