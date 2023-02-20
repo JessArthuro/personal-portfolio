@@ -13,6 +13,8 @@ export const ProjectsItem = ({
     <article
       className="projects_item"
       style={{ backgroundImage: `url(${imgsrc})` }}
+      data-aos="fade-up"
+      data-aos-delay="100"
     >
       <div className="item_info">
         <div className="item_heading">

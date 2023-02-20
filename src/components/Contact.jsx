@@ -8,7 +8,11 @@ export const Contact = () => {
 
   return (
     <section className="contact_section" id="contact">
-      <div className="container contact_info">
+      <div
+        className="container contact_info"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
         <SectionTitles
           isContact={true}
           number="4"

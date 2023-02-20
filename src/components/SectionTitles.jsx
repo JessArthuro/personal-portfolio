@@ -7,8 +7,8 @@ export const SectionTitles = ({ number, name, isExperience, isContact }) => {
         isContact ? "is_contact" : ""
       }`}
       data-number={number}
+      data-aos="fade-up"
     >
-      {/* <span>{`//`}</span> {name} */}
       {name}
     </h2>
   );

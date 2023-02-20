@@ -1,4 +1,6 @@
 import { useState } from "react";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 import { useTranslation } from "react-i18next";
 import { ProjectsItem } from "./ProjectsItem";
 import { TechName } from "./TechName";
@@ -21,10 +23,14 @@ import { BtnPrimary } from "./BtnPrimary";
 export const Projects = () => {
   const [t] = useTranslation("global");
 
+  // useEffect(() => {
+  //   AOS.init({ duration: 800, once: true, easing: "ease-out" });
+  // }, []);
+
   const [showItems, setShowItems] = useState(false);
 
   return (
-    <section className="projects_section" id="projects">
+    <section className="projects_section" id="projects" data-aos="fade-up">
       <div className="container">
         <SectionTitles number="3" name={t("section_titles.projects")} />
 

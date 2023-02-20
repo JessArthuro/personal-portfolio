@@ -21,7 +21,7 @@ export const Experience = () => {
         />
 
         <div className="timeline">
-          <div className="line"></div>
+          <div className="line" data-aos="fade-up" data-aos-delay="100"></div>
 
           <TimelineItem
             img={imgAg3}
@@ -77,52 +77,3 @@ export const Experience = () => {
     </section>
   );
 };
-
-// useEffect(() => {
-//   let triangle = document.getElementById("dashed-path");
-//   let length = triangle.getTotalLength();
-
-//   triangle.style.strokeDasharray = length;
-//   triangle.style.strokeDashoffset = length;
-
-//   const myFunction = () => {
-//     let scrollpercent =
-//       (document.body.scrollTop + document.documentElement.scrollTop) /
-//       (document.documentElement.scrollHeight -
-//         document.documentElement.clientHeight);
-
-//     let draw = length * scrollpercent;
-
-//     triangle.style.strokeDashoffset = length - draw;
-//   };
-
-//   window.addEventListener("scroll", myFunction);
-//   return () => window.removeEventListener("scroll", myFunction);
-// }, []);
-
-{
-  /* <svg
-  width="10px"
-  height="298px"
-  xmlns="http://www.w3.org/2000/svg"
-  version="1.1"
-  fill="#000000"
->
-  <g id="Layer_1">
-    <title>Layer 1</title>
-    <g id="svg_1" stroke="null" strokeWidth="0">
-      <path id="svg_2" stroke="null" transform="rotate(-45 130.745 135.425)" />
-    </g>
-    <g stroke="null">
-      <path
-        stroke="#fff"
-        strokeLinejoin="round"
-        strokeLinecap="round"
-        strokeWidth="1.5"
-        d="m4.91112,1.84374l0,294.28324"
-        id="dashed-path"
-      />
-    </g>
-  </g>
-</svg>; */
-}

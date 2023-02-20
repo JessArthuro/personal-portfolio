@@ -13,7 +13,7 @@ export const About = () => {
         <SectionTitles number="1" name={t("section_titles.about")} />
 
         <div className="about_grid">
-          <div className="about_data">
+          <div className="about_data" data-aos="fade-up" data-aos-delay="100">
             <p>{t("about.text1")}</p>
             <p>{t("about.text2")}</p>
             <p>{t("about.text3")}</p>
@@ -34,7 +34,11 @@ export const About = () => {
               <SkillsItem name="VS Code" />
             </ul>
           </div>
-          <div className="about_picture">
+          <div
+            className="about_picture"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <img className="about_image" src={myImg} alt="" />
           </div>
         </div>

@@ -1,3 +1,5 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { GoToTop } from "./components/GoToTop";
@@ -8,6 +10,12 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 
 function App() {
+  AOS.init({
+    duration: 800,
+    once: true,
+    easing: "ease-out"
+  });
+
   return (
     <>
       <Header />

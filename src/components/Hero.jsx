@@ -1,6 +1,3 @@
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { useTranslation } from "react-i18next";
 import { SocialLink } from "./SocialLink";
 import { FiGithub } from "react-icons/fi";
@@ -11,10 +8,6 @@ import "../styles/hero.scss";
 
 export const Hero = () => {
   const [t] = useTranslation("global");
-
-  useEffect(() => {
-    AOS.init({ duration: 800, once: true, easing: "ease-out" });
-  }, []);
 
   return (
     <section className="hero_section">
@@ -70,9 +63,9 @@ export const Hero = () => {
 
         <div
           className="scroll_down"
-          data-aos="fade-up"
-          data-aos-offset="20"
-          data-aos-delay="1600"
+          data-aos="zoom-in"
+          data-aos-offset="80"
+          data-aos-anchor-placement="bottom-bottom"
         >
           <a href="#about" className="scroll_link"></a>
         </div>
