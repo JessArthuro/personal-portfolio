@@ -8,7 +8,7 @@ export const About = () => {
   const [t] = useTranslation("global");
 
   return (
-    <section className="about_section" id="about">
+    <section className="about_section nav_section" id="about">
       <div className="container">
         <SectionTitles number="1" name={t("section_titles.about")} />
 

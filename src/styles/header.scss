@@ -64,12 +64,17 @@
   color: var(--gray);
   padding-bottom: 0.35rem;
   position: relative;
-  transition: color .5s;
+  transition: color 0.5s ease-out;
 
   &::before {
     content: "0"counter(item) ".";
     color: var(--blue);
     margin-right: 0.35rem;
+  }
+
+  &.active-link {
+    color: var(--white);
+    font-weight: 500;
   }
 
   &:hover {

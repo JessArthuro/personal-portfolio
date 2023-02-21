@@ -12,7 +12,7 @@ export const Experience = () => {
   const [t] = useTranslation("global");
 
   return (
-    <section className="experience_section" id="experience">
+    <section className="experience_section nav_section" id="experience">
       <div className="container">
         <SectionTitles
           isExperience={true}

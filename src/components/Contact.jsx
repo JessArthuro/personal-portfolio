@@ -7,7 +7,7 @@ export const Contact = () => {
   const [t] = useTranslation("global");
 
   return (
-    <section className="contact_section" id="contact">
+    <section className="contact_section nav_section" id="contact">
       <div
         className="container contact_info"
         data-aos="fade-up"

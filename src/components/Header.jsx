@@ -47,6 +47,33 @@ export const Header = () => {
     return () => window.removeEventListener("scroll", handleScrolling);
   }, []);
 
+  useEffect(() => {
+    const sections = document.querySelectorAll(".nav_section[id]");
+
+    const scrollActive = () => {
+      const scrollY = window.pageYOffset;
+
+      sections.forEach((current) => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 80;
+        const sectionId = current.getAttribute("id");
+
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+          document
+            .querySelector(".nav_link[href*=" + sectionId + "]")
+            .classList.add("active-link");
+        } else {
+          document
+            .querySelector(".nav_link[href*=" + sectionId + "]")
+            .classList.remove("active-link");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", scrollActive);
+    return () => window.removeEventListener("scroll", scrollActive);
+  }, []);
+
   return (
     <header
       className={`header_section ${headerScroll ? "header_scrolling" : ""}`}
