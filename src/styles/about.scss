@@ -16,25 +16,24 @@
     font-size: 0.95rem;
     line-height: 1.5;
     margin-bottom: 1.25rem;
-
-    &:last-of-type {
-      margin-bottom: 0.75rem;
-    }
   }
 }
 
-.skills_list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  list-style: none;
-  row-gap: 0.5rem;
+.slider_container {
+  width: 32vw;
 
-  li {
-    font-family: var(--font-inter);
-    font-size: 0.9rem;
-    display: flex;
-    align-items: center;
-    column-gap: 0.25rem;
+  p {
+    background-color: var(--edges);
+    color: var(--white);
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+
+    span {
+      color: var(--gray);
+      font-weight: 300;
+      font-family: var(--font-inter);
+    }
   }
 }
 
@@ -58,20 +57,16 @@
     grid-template-columns: 1fr;
     margin: 2rem 0 0;
   }
+
+  .slider_container {
+    width: 86vw;
+  }
 }
 
 @media (max-width: 420px) {
   .about_data {
     p {
       font-size: 1rem;
-    }
-  }
-
-  .skills_list {
-    grid-template-columns: repeat(2, 1fr);
-
-    li {
-      font-size: 0.95rem;
     }
   }
 

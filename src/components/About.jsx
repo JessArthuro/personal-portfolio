@@ -1,8 +1,12 @@
 import { useTranslation } from "react-i18next";
 import { SectionTitles } from "./SectionTitles";
-import { SkillsItem } from "./SkillsItem";
 import myImg from "../assets/yo.jpg";
 import "../styles/about.scss";
+
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
+import "@splidejs/splide/dist/css/splide.min.css";
+import { SkillsList } from "../data";
 
 export const About = () => {
   const [t] = useTranslation("global");
@@ -20,19 +24,37 @@ export const About = () => {
             <p>{t("about.text4")}</p>
             <p>{t("about.text5")}</p>
 
-            <ul className="skills_list">
-              <SkillsItem name="HTML" />
-              <SkillsItem name="CSS" />
-              <SkillsItem name="Sass" />
-              <SkillsItem name="JS" />
-              <SkillsItem name="React" />
-              <SkillsItem name="Bootstrap" />
-              <SkillsItem name="Tailwindcss" />
-              <SkillsItem name="Webpack" />
-              <SkillsItem name="Git" />
-              <SkillsItem name="NPM" />
-              <SkillsItem name="VS Code" />
-            </ul>
+            <div className="slider_container">
+              <Splide
+                aria-label="Skills List"
+                options={{
+                  type: "loop",
+                  gap: "1.5rem",
+                  drag: "free",
+                  arrows: false,
+                  pagination: false,
+                  autoWidth: true,
+                  autoHeight: true,
+                  autoScroll: {
+                    pauseOnHover: false,
+                    pauseOnFocus: false,
+                    rewind: false,
+                    speed: 0.65,
+                  },
+                }}
+                extensions={{ AutoScroll }}
+              >
+                {SkillsList.map((item, index) => {
+                  return (
+                    <SplideSlide key={index}>
+                      <p>
+                        <span>#</span> {item.name}
+                      </p>
+                    </SplideSlide>
+                  );
+                })}
+              </Splide>
+            </div>
           </div>
           <div
             className="about_picture"

@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@splidejs/react-splide": "^0.7.12",
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
     "aos": "^3.0.0-beta.6",
     "i18next": "^22.4.8",
     "react": "^18.2.0",
