@@ -19,7 +19,12 @@ export const ProjectsItem = ({
       <div className="item_info">
         <div className="item_heading">
           <h3 className="item_title">
-            <a href={extlink} target="_blank" rel="noopener noreferrer">
+            <a
+              href={extlink}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link that redirects to the live view of the project"
+            >
               {name}
             </a>
           </h3>
@@ -29,6 +34,7 @@ export const ProjectsItem = ({
               href={repolink}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Link that redirects to the project repository"
             >
               <FiGithub />
             </a>
@@ -37,6 +43,7 @@ export const ProjectsItem = ({
               href={extlink}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Link that redirects to the live view of the project"
             >
               <FiExternalLink />
             </a>

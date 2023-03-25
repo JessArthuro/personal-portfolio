@@ -23,18 +23,22 @@ export const Footer = () => {
             <SocialLink
               link="https://github.com/JessArthuro"
               icon={<FiGithub />}
+              arialabel="Github"
             />
             <SocialLink
               link="https://www.linkedin.com/in/jsarturo-dev/"
               icon={<SlSocialLinkedin />}
+              arialabel="Linkedin"
             />
             <SocialLink
               link="https://twitter.com/JessArthuro"
               icon={<RxTwitterLogo />}
+              arialabel="Twitter"
             />
             <SocialLink
               link="https://www.instagram.com/jess_arthuro/"
               icon={<RxInstagramLogo />}
+              arialabel="Instagram"
             />
           </div>
         </div>

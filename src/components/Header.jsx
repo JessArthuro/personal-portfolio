@@ -84,7 +84,7 @@ export const Header = () => {
         data-aos-delay="200"
       >
         <a href="/" className="logo_link">
-          <img src={logo} alt="" className="logo_img" />
+          <img src={logo} alt="Logo" className="logo_img" />
         </a>
 
         <div className="nav">
@@ -126,10 +126,16 @@ export const Header = () => {
               </a>
             </li>
           </ol>
-          <button className="menu_btn" onClick={() => setMenu((prev) => !prev)}>
+          <button
+            aria-expanded="false"
+            aria-label="Navigation menu"
+            className="menu_btn"
+            onClick={() => setMenu((prev) => !prev)}
+          >
             <HiOutlineMenuAlt3 />
           </button>
           <button
+            aria-label="Button to close navigation menu"
             className={`close_menu ${menu ? "open_menu" : ""}`}
             onClick={() => setMenu(false)}
           >

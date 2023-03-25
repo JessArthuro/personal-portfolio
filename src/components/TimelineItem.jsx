@@ -6,7 +6,7 @@ export const TimelineItem = ({ img, title, date, activities }) => {
       <div className="timeline_item-content">
         <img className="timeline_item-logo" src={img} alt="" />
         <h3 className="timeline_item-title">{title}</h3>
-        <h5 className="timeline_item-date">{date}</h5>
+        <h4 className="timeline_item-date">{date}</h4>
 
         <ul className="activities_list">{activities}</ul>
       </div>

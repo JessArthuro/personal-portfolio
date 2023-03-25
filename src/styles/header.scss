@@ -75,6 +75,10 @@
   &.active-link {
     color: var(--white);
     font-weight: 500;
+    
+    &::before {
+      color: var(--white);
+    }
   }
 
   &:hover {
@@ -107,6 +111,7 @@
   color: var(--blue);
   font-size: 2.25rem;
   padding: 0.5rem;
+  padding-right: 0;
   display: none;
 }
 

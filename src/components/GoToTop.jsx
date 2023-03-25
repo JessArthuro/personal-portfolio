@@ -29,6 +29,7 @@ export const GoToTop = () => {
 
   return (
     <button
+      aria-label="Button to navigate to the top of the page"
       className={`btn_top ${isVisible ? "visible" : ""}`}
       onClick={goToTop}
     >

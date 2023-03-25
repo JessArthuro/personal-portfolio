@@ -45,18 +45,22 @@ export const Hero = () => {
             <SocialLink
               link="https://github.com/JessArthuro"
               icon={<FiGithub />}
-            />
+              arialabel="Github"
+              />
             <SocialLink
               link="https://www.linkedin.com/in/jsarturo-dev/"
               icon={<SlSocialLinkedin />}
-            />
+              arialabel="Linkedin"
+              />
             <SocialLink
               link="https://twitter.com/JessArthuro"
               icon={<RxTwitterLogo />}
-            />
+              arialabel="Twitter"
+              />
             <SocialLink
               link="https://www.instagram.com/jess_arthuro/"
               icon={<RxInstagramLogo />}
+              arialabel="Instagram"
             />
           </div>
         </div>
@@ -67,7 +71,7 @@ export const Hero = () => {
           data-aos-offset="80"
           data-aos-anchor-placement="bottom-bottom"
         >
-          <a href="#about" className="scroll_link"></a>
+          <a href="#about" className="scroll_link" aria-label="Button to indicate scrolling down"></a>
         </div>
 
         <div
