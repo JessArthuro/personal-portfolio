@@ -61,7 +61,7 @@ export const About = () => {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <img className="about_image" src={myImg} alt="" />
+            <img className="about_image" src={myImg} alt="" width="278" height="368" />
           </div>
         </div>
       </div>

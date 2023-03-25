@@ -25,6 +25,7 @@ export const Experience = () => {
 
           <TimelineItem
             img={imgAg3}
+            width={75}
             title="AG3 LUXURY TRAVEL"
             date={t("experience.ag3_dates")}
             activities={
@@ -38,6 +39,7 @@ export const Experience = () => {
 
           <TimelineItem
             img={imgSmapac}
+            width={84}
             title="SMAPAC"
             date={t("experience.smapac_dates")}
             activities={
@@ -46,10 +48,11 @@ export const Experience = () => {
                 <ActivitiesItem text={t("experience.smapac_text2")} />
               </>
             }
-          />
+            />
 
           <TimelineItem
             img={imgHitzone}
+            width={42}
             title="HITZONE BOXFIT"
             date={t("experience.hitzone_dates")}
             activities={
@@ -58,10 +61,11 @@ export const Experience = () => {
                 <ActivitiesItem text={t("experience.hitzone_text2")} />
               </>
             }
-          />
+            />
 
           <TimelineItem
             img={imgCbta}
+            width={52}
             title="CBTA No. 62"
             date={t("experience.cbta_dates")}
             activities={

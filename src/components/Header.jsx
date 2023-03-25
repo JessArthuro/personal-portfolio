@@ -84,7 +84,7 @@ export const Header = () => {
         data-aos-delay="200"
       >
         <a href="/" className="logo_link">
-          <img src={logo} alt="Logo" className="logo_img" />
+          <img src={logo} alt="Logo" className="logo_img" width={36} height={35} />
         </a>
 
         <div className="nav">
@@ -154,7 +154,7 @@ export const Header = () => {
             onClick={() => setIsOpen((prev) => !prev)}
           >
             {i18n.language}
-            <img className="arrow_icon" src={ArrowDown} alt="" />
+            <img className="arrow_icon" src={ArrowDown} alt="" width={19} height={19} />
           </button>
 
           <ul className={`languages_list ${isOpen ? "open" : ""}`}>

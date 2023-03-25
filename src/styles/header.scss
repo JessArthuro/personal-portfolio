@@ -18,6 +18,7 @@
 
     .logo_img {
       height: 2.2rem;
+      width: auto;
     }
 
     .nav {
@@ -40,7 +41,8 @@
 
 .logo_img {
   height: 3rem;
-  transition: height 0.4s ease-out;
+  width: auto;
+  transition: all 0.4s ease-out;
 }
 
 .nav {
@@ -150,7 +152,7 @@
     cursor: pointer;
 
     .arrow_icon {
-      height: 1.2rem;
+      // height: 1.2rem;
       z-index: -1;
     }
   }
@@ -197,6 +199,7 @@
 
       .logo_img {
         height: 2.5rem;
+        width: auto;
       }
 
       .nav {
@@ -257,6 +260,7 @@
 
       .arrow_icon {
         height: 1.5rem;
+        width: auto;
       }
     }
 

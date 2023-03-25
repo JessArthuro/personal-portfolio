@@ -15,7 +15,7 @@ export const Footer = () => {
       <section className="container">
         <div className="footer_data">
           <div className="footer_logo">
-            <img src={logo} alt="" className="footer_img" />
+            <img src={logo} alt="" className="footer_img" width={64} height={62} />
             {t("footer.logo")}
           </div>
 
