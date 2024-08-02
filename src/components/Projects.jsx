@@ -60,7 +60,7 @@ export const Projects = () => {
             }
           />
 
-          <ProjectsItem
+          {/* <ProjectsItem
             extlink="https://jsarturo-rickandmorty.netlify.app/"
             imgsrc={imgRickMorty}
             repolink="https://github.com/JessArthuro/wiki-rickandmorty"
@@ -73,7 +73,7 @@ export const Projects = () => {
                 <TechName name="SCSS" />
               </>
             }
-          />
+          /> */}
 
           <ProjectsItem
             extlink="https://jsarturo-medicom.netlify.app/"
@@ -90,7 +90,7 @@ export const Projects = () => {
               </>
             }
           />
-          <ProjectsItem
+          {/* <ProjectsItem
             extlink="https://jsarturo-tasks.netlify.app/"
             imgsrc={imgTasks}
             repolink="https://github.com/JessArthuro/todo-app"
@@ -103,7 +103,7 @@ export const Projects = () => {
                 <TechName name="Moment.js" />
               </>
             }
-          />
+          /> */}
           <ProjectsItem
             extlink="https://jessarthuro.github.io/interio/"
             imgsrc={imgInterio}
@@ -116,6 +116,22 @@ export const Projects = () => {
                 <TechName name="SCSS" />
                 <TechName name="JS" />
                 <TechName name="Swiper" />
+              </>
+            }
+          />
+
+          <ProjectsItem
+            extlink="https://jessarthuro.github.io/uniqlo/"
+            imgsrc={imgUniqlo}
+            repolink="https://github.com/JessArthuro/uniqlo"
+            name="Uniqlo"
+            description={t("projects.description_uniqlo")}
+            techname={
+              <>
+                <TechName name="HTML" />
+                <TechName name="CSS" />
+                <TechName name="JS" />
+                <TechName name="Boxicons" />
               </>
             }
           />
@@ -136,21 +152,7 @@ export const Projects = () => {
                   </>
                 }
               />
-              <ProjectsItem
-                extlink="https://jessarthuro.github.io/uniqlo/"
-                imgsrc={imgUniqlo}
-                repolink="https://github.com/JessArthuro/uniqlo"
-                name="Uniqlo"
-                description={t("projects.description_uniqlo")}
-                techname={
-                  <>
-                    <TechName name="HTML" />
-                    <TechName name="CSS" />
-                    <TechName name="JS" />
-                    <TechName name="Boxicons" />
-                  </>
-                }
-              />
+
               <ProjectsItem
                 extlink="https://jessarthuro.github.io/motosport/"
                 imgsrc={imgMotosport}

@@ -3,7 +3,7 @@ import logo from "../assets/logo.svg";
 import { SocialLink } from "./SocialLink";
 import { FiGithub } from "react-icons/fi";
 import { SlSocialLinkedin } from "react-icons/sl";
-import { RxInstagramLogo, RxTwitterLogo } from "react-icons/rx";
+import { RxInstagramLogo } from "react-icons/rx";
 import { TiHeartFullOutline } from "react-icons/ti";
 import "../styles/footer.scss";
 
@@ -29,11 +29,6 @@ export const Footer = () => {
               link="https://www.linkedin.com/in/jsarturo-dev/"
               icon={<SlSocialLinkedin />}
               arialabel="Linkedin"
-            />
-            <SocialLink
-              link="https://twitter.com/JessArthuro"
-              icon={<RxTwitterLogo />}
-              arialabel="Twitter"
             />
             <SocialLink
               link="https://www.instagram.com/jess_arthuro/"

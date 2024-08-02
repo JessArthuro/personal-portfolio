@@ -15,6 +15,24 @@ export const SkillsList = [
     name: "ReactJS"
   },
   {
+    name: "Angular"
+  },
+  {
+    name: "TypeScript"
+  },
+  {
+    name: "Ajax"
+  },
+  {
+    name: "Jquery"
+  },
+  {
+    name: "PHP"
+  },
+  {
+    name: "Laravel"
+  },
+  {
     name: "Bootstrap"
   },
   {
@@ -24,16 +42,16 @@ export const SkillsList = [
     name: "Photoshop"
   },
   {
-    name: "Vegas Pro"
-  },
-  {
-    name: "Webpack"
+    name: "Illustrator"
   },
   {
     name: "Git"
   },
   {
-    name: "NPM"
+    name: "MySQL"
+  },
+  {
+    name: "Postman"
   },
   {
     name: "VS Code"

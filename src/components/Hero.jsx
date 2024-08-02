@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { SocialLink } from "./SocialLink";
 import { FiGithub } from "react-icons/fi";
 import { SlSocialLinkedin } from "react-icons/sl";
-import { RxInstagramLogo, RxTwitterLogo } from "react-icons/rx";
+import { RxInstagramLogo } from "react-icons/rx";
 import { BtnPrimary } from "./BtnPrimary";
 import "../styles/hero.scss";
 
@@ -51,11 +51,6 @@ export const Hero = () => {
               link="https://www.linkedin.com/in/jsarturo-dev/"
               icon={<SlSocialLinkedin />}
               arialabel="Linkedin"
-              />
-            <SocialLink
-              link="https://twitter.com/JessArthuro"
-              icon={<RxTwitterLogo />}
-              arialabel="Twitter"
               />
             <SocialLink
               link="https://www.instagram.com/jess_arthuro/"
