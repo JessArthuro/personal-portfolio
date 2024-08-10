@@ -32,7 +32,6 @@ export const Experience = () => {
               <>
                 <ActivitiesItem text={t("experience.ag3_text1")} />
                 <ActivitiesItem text={t("experience.ag3_text2")} />
-                <ActivitiesItem text={t("experience.ag3_text3")} />
               </>
             }
           />
