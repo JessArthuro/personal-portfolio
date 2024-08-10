@@ -22,11 +22,10 @@
     "contact": "Contacto"
   },
   "about": {
-    "text1": "Soy un desarrollador frontend con +3 años de experiencia en la creación de productos escalables que ayuden a destacar su empresa o negocio de la competencia. Produzco sitios web elegantes, responsivos y de alta calidad que visualmente son atractivos, además ofrezco una experiencia de usuario excepcional. En ocasiones también hago un poco de diseño en Photoshop y/o Vegas Pro.",
-    "text2": "Durante mi carrera universitaria pude participar en programas de innovación tecnológica en donde fortalecí mis habilidades blandas al poder trabajar con equipos multidisciplinarios.",
-    "text3": "He tenido el privilegio de trabajar en una agencia de transporte turístico, una empresa pública de agua potable y alcantarillado, un gimnasio de boxeo y una institución educativa de nivel medio superior.",
-    "text4": "Actualmente, estoy usando React para crear cosas nuevas.",
-    "text5": "Estas son algunas de las tecnologías con las que he podido trabajar:"
+    "text1": "Soy un desarrollador frontend con 3 años de experiencia en la creación de soluciones web sofisticadas y escalables que impulsan la presencia de las empresas en su mercado. Mi pasión por el diseño y desarrollo web se refleja en mi habilidad para construir sitios web elegantes, responsivos y funcionales que combinan atractivo visual con una experiencia de usuario excepcional.",
+    "text2": "Mi enfoque por aplicar las mejores prácticas en accesibilidad, SEO y diseño responsivo, garantizan que cada proyecto no solo cumpla con los estándares técnicos, sino que también brinde una experiencia agradable y accesible para todos los usuarios.",
+    "text3": "Durante mi carrera universitaria, participé en programas de innovación tecnológica que fortalecieron mis habilidades blandas y mi capacidad para colaborar en equipos multidisciplinarios. He trabajado en diversos sectores, incluyendo transporte turístico, servicios públicos, educación y telecomunicaciones, lo que me ha permitido abordar una amplia gama de desafíos y contextos en el desarrollo web.",
+    "text4": "Estas son algunas de las tecnologías con las que he podido trabajar:"
   },
   "experience": {
     "ag3_dates": "Diciembre 2021 - Julio 2022",
