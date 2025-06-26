@@ -10,7 +10,7 @@
   "hero": {
     "title": "Hola, mi nombre es",
     "subtitle": "Construyo sitios web y aplicaciones increíbles",
-    "description": "Soy un desarrollador web front-end e Ingeniero en Sistemas Computacionales que disfruta crear conceptos fantásticos y experiencias digitales para la web.",
+    "description": "Soy un desarrollador web e Ingeniero en Sistemas Computacionales que disfruta crear conceptos fantásticos y experiencias digitales para la web.",
     "button": "Conoce más",
     "scroll_title": "Desplázate hacia abajo",
     "scroll_description": "para descubrir más"
@@ -22,7 +22,7 @@
     "contact": "Contacto"
   },
   "about": {
-    "text1": "Soy un desarrollador frontend con 3 años de experiencia en la creación de soluciones web sofisticadas y escalables que impulsan la presencia de las empresas en su mercado. Mi pasión por el diseño y desarrollo web se refleja en mi habilidad para construir sitios web elegantes, responsivos y funcionales que combinan atractivo visual con una experiencia de usuario excepcional.",
+    "text1": "Soy un desarrollador web con más de 3 años de experiencia en la creación de soluciones web sofisticadas y escalables que impulsan la presencia de las empresas en su mercado. Mi pasión por el diseño y desarrollo web se refleja en mi habilidad para construir sitios web elegantes, responsivos y funcionales que combinan atractivo visual con una experiencia de usuario excepcional.",
     "text2": "Mi enfoque por aplicar las mejores prácticas en accesibilidad, SEO y diseño responsivo, garantizan que cada proyecto no solo cumpla con los estándares técnicos, sino que también brinde una experiencia agradable y accesible para todos los usuarios.",
     "text3": "Durante mi carrera universitaria, participé en programas de innovación tecnológica que fortalecieron mis habilidades blandas y mi capacidad para colaborar en equipos multidisciplinarios. He trabajado en diversos sectores, incluyendo transporte turístico, servicios públicos, educación y telecomunicaciones, lo que me ha permitido abordar una amplia gama de desafíos y contextos en el desarrollo web.",
     "text4": "Estas son algunas de las tecnologías con las que he podido trabajar:"
@@ -62,7 +62,7 @@
     "btn": "Dime Hola"
   },
   "footer": {
-    "logo": "Desarrollador web front-end",
+    "logo": "Desarrollador web",
     "author_1": "Hecho con",
     "author_2": "por"
   }

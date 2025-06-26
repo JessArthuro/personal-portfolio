@@ -10,7 +10,7 @@
   "hero": {
     "title": "Hi, my name is",
     "subtitle": "I build incredible websites and apps",
-    "description": "I'm a front-end web developer and Computer Systems Engineer who enjoys creating fantastic concepts and digital experiences for the web.",
+    "description": "I'm a web developer and Computer Systems Engineer who enjoys creating fantastic concepts and digital experiences for the web.",
     "button": "Learn more",
     "scroll_title": "Scroll down",
     "scroll_description": "to discover more"
@@ -22,7 +22,7 @@
     "contact": "Contact"
   },
   "about": {
-    "text1": "I am a frontend developer with 3 years of experience in creating sophisticated and scalable web solutions that boost the presence of companies in their market. My passion for web design and development is reflected in my ability to build elegant, responsive and functional websites that combine visual appeal with an exceptional user experience.",
+    "text1": "I am a web developer with over 3 years of experience in creating sophisticated and scalable web solutions that boost the presence of companies in their market. My passion for web design and development is reflected in my ability to build elegant, responsive and functional websites that combine visual appeal with an exceptional user experience.",
     "text2": "My focus on applying best practices in accessibility, SEO, and responsive design, ensures that each project not only meets technical standards, but also provides an enjoyable and accessible experience for all users.",
     "text3": "During my undergraduate career, I participated in technology innovation programs that strengthened my soft skills and ability to collaborate in multidisciplinary teams. I have worked in various sectors, including tourist transport, utilities, education and telecommunications, which has allowed me to address a wide range of challenges and contexts in web development.",
     "text4": "These are some of the technologies I have been able to work with:"
@@ -62,7 +62,7 @@
     "btn": "Say Hello"
   },
   "footer": {
-    "logo": "Front-end web developer",
+    "logo": "Web developer",
     "author_1": "Made with",
     "author_2": "by"
   }
