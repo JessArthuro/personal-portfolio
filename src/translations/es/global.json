@@ -9,8 +9,8 @@
   },
   "hero": {
     "title": "Hola, mi nombre es",
-    "subtitle": "Construyo sitios web y aplicaciones increíbles",
-    "description": "Soy un desarrollador web e Ingeniero en Sistemas Computacionales que disfruta crear conceptos fantásticos y experiencias digitales para la web.",
+    "subtitle": "Desarrollo sistemas web funcionales y escalables",
+    "description": "Soy Ingeniero en Sistemas Computacionales con experiencia en construir soluciones digitales que automatizan procesos y mejoran la eficiencia de negocios.",
     "button": "Conoce más",
     "scroll_title": "Desplázate hacia abajo",
     "scroll_description": "para descubrir más"
@@ -22,10 +22,11 @@
     "contact": "Contacto"
   },
   "about": {
-    "text1": "Soy un desarrollador web con más de 3 años de experiencia en la creación de soluciones web sofisticadas y escalables que impulsan la presencia de las empresas en su mercado. Mi pasión por el diseño y desarrollo web se refleja en mi habilidad para construir sitios web elegantes, responsivos y funcionales que combinan atractivo visual con una experiencia de usuario excepcional.",
-    "text2": "Mi enfoque por aplicar las mejores prácticas en accesibilidad, SEO y diseño responsivo, garantizan que cada proyecto no solo cumpla con los estándares técnicos, sino que también brinde una experiencia agradable y accesible para todos los usuarios.",
-    "text3": "Durante mi carrera universitaria, participé en programas de innovación tecnológica que fortalecieron mis habilidades blandas y mi capacidad para colaborar en equipos multidisciplinarios. He trabajado en diversos sectores, incluyendo transporte turístico, servicios públicos, educación y telecomunicaciones, lo que me ha permitido abordar una amplia gama de desafíos y contextos en el desarrollo web.",
-    "text4": "Estas son algunas de las tecnologías con las que he podido trabajar:"
+    "text1": "Soy Ingeniero en Sistemas Computacionales con más de 3 años de experiencia en desarrollo web, especializado en la creación de sistemas funcionales, escalables y orientados a resolver necesidades reales de negocio.",
+    "text2": "He trabajado en la implementación de sistemas ERP, plataformas de cotización, sitios web multilenguaje y soluciones que integran software con dispositivos electrónicos, contribuyendo a la automatización de procesos y la mejora en la eficiencia operativa.",
+    "text3": "Me especializo en tecnologías como Laravel, PHP, JavaScript, Bootstrap, jQuery y MySQL, y tengo experiencia integrando APIs REST para conectar sistemas con servicios y hardware externo. También he colaborado en estrategias de marketing digital y gestión de contenido para mejorar el alcance y la presencia en línea de empresas.",
+    "text4": "Soy una persona proactiva, enfocada en resultados, con una fuerte orientación a la mejora continua y al trabajo en equipo. Siempre busco aportar soluciones que generen un impacto positivo en los procesos y objetivos de cada proyecto.",
+    "text5": "Estas son algunas de las tecnologías con las que he podido trabajar:"
   },
   "experience": {
     "encer_dates": "Junio 2023 - Actualidad",

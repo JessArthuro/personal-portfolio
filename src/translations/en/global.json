@@ -9,8 +9,8 @@
   },
   "hero": {
     "title": "Hi, my name is",
-    "subtitle": "I build incredible websites and apps",
-    "description": "I'm a web developer and Computer Systems Engineer who enjoys creating fantastic concepts and digital experiences for the web.",
+    "subtitle": "Development of functional and scalable web systems",
+    "description": "I am a Computer Systems Engineer with experience building digital solutions that automate processes and improve business efficiency.",
     "button": "Learn more",
     "scroll_title": "Scroll down",
     "scroll_description": "to discover more"
@@ -22,10 +22,11 @@
     "contact": "Contact"
   },
   "about": {
-    "text1": "I am a web developer with over 3 years of experience in creating sophisticated and scalable web solutions that boost the presence of companies in their market. My passion for web design and development is reflected in my ability to build elegant, responsive and functional websites that combine visual appeal with an exceptional user experience.",
-    "text2": "My focus on applying best practices in accessibility, SEO, and responsive design, ensures that each project not only meets technical standards, but also provides an enjoyable and accessible experience for all users.",
-    "text3": "During my undergraduate career, I participated in technology innovation programs that strengthened my soft skills and ability to collaborate in multidisciplinary teams. I have worked in various sectors, including tourist transport, utilities, education and telecommunications, which has allowed me to address a wide range of challenges and contexts in web development.",
-    "text4": "These are some of the technologies I have been able to work with:"
+    "text1": "I am a Computer Systems Engineer with more than 3 years of experience in web development, specialized in the creation of functional, scalable systems oriented to solve real business needs.",
+    "text2": "I have worked on the implementation of ERP systems, quoting platforms, multilingual websites, and solutions that integrate software with electronic devices, contributing to process automation and improved operational efficiency.",
+    "text3": "I specialize in technologies such as Laravel, PHP, JavaScript, Bootstrap, jQuery, and MySQL, and have experience integrating REST APIs to connect systems with external services and hardware. I have also collaborated on digital marketing and content management strategies to improve companies' reach and online presence.",
+    "text4": "I am a proactive person, focused on results, with a strong orientation to continuous improvement and teamwork. I always seek to provide solutions that generate a positive impact on the processes and objectives of each project.",
+    "text5": "These are some of the technologies I have been able to work with:"
   },
   "experience": {
     "encer_dates": "June 2023 - Present",

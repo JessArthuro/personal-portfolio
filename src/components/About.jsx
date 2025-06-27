@@ -22,6 +22,7 @@ export const About = () => {
             <p>{t("about.text2")}</p>
             <p>{t("about.text3")}</p>
             <p>{t("about.text4")}</p>
+            <p>{t("about.text5")}</p>
 
             <div className="slider_container">
               <Splide
