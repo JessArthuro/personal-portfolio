@@ -6,6 +6,8 @@ import imgAg3 from "../assets/logos/ag3.png";
 import imgSmapac from "../assets/logos/smapac.png";
 import imgHitzone from "../assets/logos/hitzone.png";
 import imgCbta from "../assets/logos/cbta.png";
+import imgEncer from "../assets/logos/encer.png";
+import imgSalvagno from "../assets/logos/salvagno.png";
 import "../styles/experience.scss";
 
 export const Experience = () => {
@@ -14,19 +16,42 @@ export const Experience = () => {
   return (
     <section className="experience_section nav_section" id="experience">
       <div className="container">
-        <SectionTitles
-          isExperience={true}
-          number="2"
-          name={t("section_titles.experience")}
-        />
+        <SectionTitles isExperience={true} number="2" name={t("section_titles.experience")} />
 
         <div className="timeline">
           <div className="line" data-aos="fade-up" data-aos-delay="100"></div>
 
           <TimelineItem
+            img={imgEncer}
+            width={53}
+            title="ENCER"
+            date={t("experience.encer_dates")}
+            activities={
+              <>
+                <ActivitiesItem text={t("experience.encer_text1")} />
+                <ActivitiesItem text={t("experience.encer_text2")} />
+              </>
+            }
+          />
+
+          <TimelineItem
+            img={imgSalvagno}
+            width={52}
+            title="Servicios Integrales Salvagno"
+            date={t("experience.salvagno_dates")}
+            activities={
+              <>
+                <ActivitiesItem text={t("experience.salvagno_text1")} />
+                <ActivitiesItem text={t("experience.salvagno_text2")} />
+                <ActivitiesItem text={t("experience.salvagno_text3")} />
+              </>
+            }
+          />
+
+          <TimelineItem
             img={imgAg3}
             width={75}
-            title="AG3 LUXURY TRAVEL"
+            title="AG3 Luxury Travel"
             date={t("experience.ag3_dates")}
             activities={
               <>
@@ -47,7 +72,7 @@ export const Experience = () => {
                 <ActivitiesItem text={t("experience.smapac_text2")} />
               </>
             }
-            />
+          />
 
           <TimelineItem
             img={imgHitzone}
@@ -60,7 +85,7 @@ export const Experience = () => {
                 <ActivitiesItem text={t("experience.hitzone_text2")} />
               </>
             }
-            />
+          />
 
           <TimelineItem
             img={imgCbta}

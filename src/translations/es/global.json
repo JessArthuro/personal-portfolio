@@ -28,6 +28,13 @@
     "text4": "Estas son algunas de las tecnologías con las que he podido trabajar:"
   },
   "experience": {
+    "encer_dates": "Junio 2023 - Actualidad",
+    "encer_text1": "Responsable del desarrollo, optimización y mantenimiento de múltiples sistemas web utilizando tecnologías como Laravel, PHP, JavaScript, jQuery, Ajax y Bootstrap.",
+    "encer_text2": "He desarrollado sistemas que consumen APIs para integrarse con diversos dispositivos electrónicos, facilitando la comunicación entre software y hardware.",
+    "salvagno_dates": "Febrero 2023 - Abril 2023",
+    "salvagno_text1": "Desarrollé un sistema de cotizaciones en Laravel que eliminó el uso de archivos Word y Excel, centralizando todo el proceso en una sola plataforma web.",
+    "salvagno_text2": "Esta solución mejoró la consistencia de los datos, evitó errores por traspaso manual y agilizó significativamente el flujo de trabajo del área comercial.",
+    "salvagno_text3": "Utilicé tecnologías como Laravel, Bootstrap, jQuery y JavaScript para construir una interfaz intuitiva y eficiente para el registro y control de cotizaciones.",
     "ag3_dates": "Diciembre 2021 - Julio 2022",
     "ag3_text1": "Lideré la maquetación y el desarrollo frontend de un sitio web corporativo multilingüe, integrando información esencial sobre servicios y tours. Tecnologías utilizadas: Laravel, Bootstrap y JavaScript.",
     "ag3_text2": "Además gestioné y actualicé el contenido en redes sociales, mejorando la imagen de la empresa. Implementé estrategias de marketing digital logrando un aumento significativo en la captación de clientes.",
